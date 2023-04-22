@@ -1,5 +1,5 @@
 import React from 'react';
-import AgendaImg from '../../assets/images/AgendaSVG.svg'
+import AgendaImg from '../../../assets/images/AgendaSVG.svg'
 import AgendaData from './AgendaData';
 
 function Agenda() {

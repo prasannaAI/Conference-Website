@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/images/meeting_image.webp'
+import image from '../../../assets/images/meeting_image.webp'
 
 function SectionImage() {
   return (

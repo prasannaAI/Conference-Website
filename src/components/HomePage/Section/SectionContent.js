@@ -1,5 +1,5 @@
 import React from 'react';
-import LocationIcon from '../../assets/icons/location.svg'
+import LocationIcon from '../../../assets/icons/location.svg'
 
 function SectionContent() {
   return (
@@ -27,13 +27,11 @@ function SectionContent() {
                     <div className='text-5xl'>2023</div>
                     <div className='text-xl ml-2 '>August 24 - 26</div>
                 </div>
-                <div className='mt-6 font-semibold'>
-                    <div className=' text-textColor flex'> 
-                        <div > Venue </div>
-                        <img className='h-6 bg-black ml-1' src={LocationIcon} alt='location Icon' />
-                        
+                <div className='mt-8 font-semibold'>
+                    <div className=' text-textColor flex items-center'>                         
+                        <img className='h-6 bg-black ml-1' src={LocationIcon} alt='location Icon' />                        
+                    <div className='text-[#3c4856] ml-1'>Amrita Institute of Medical Sciences, Kochi, Kerala, INDIA</div>
                     </div>
-                    <div className='text-[#3c4856] mt-1'>Amrita Institute of Medical Sciences, Kochi, Kerala, INDIA</div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,9 @@
 import React from 'react';
-import WelcomeImg from '../../assets/images/politician-giving-his-speech-to-public.svg';
+import WelcomeImg from '../../../assets/images/politician-giving-his-speech-to-public.svg';
+import { useNavigate } from 'react-router-dom';
 
 function WelcomeAddress() {
+  const navigate = useNavigate();
   return (
     <>
         <div className='bg-secondary px-20 mt-8 rounded-t-[12rem] '>
@@ -14,7 +16,10 @@ function WelcomeAddress() {
                 <div class=" leading-relaxed text-xl text-textSecondaryColor ms-2 ">
                 Greetings! Herein, we are cordially inviting you to take part in the Educational Course of the International Stereotactic Radiosurgery Society (ISRS; www.ISRSy.org), which will be held in Kochi, Kerala, India, on August 24-26th, 2023. 
                 Starting from December 2016, ISRS has launched its educational program with regular organization of courses with a purpose to disseminate knowledge on current applications of stereotactic irradiation in management of various neurosurgical and somatic diseases, and to provide continuous medical education in this field.{' '}
-                <button className='underline hover:text-lightBlue'>More to Know</button>    
+                <button className='underline hover:text-lightBlue'
+                onClick={() => navigate('welcomeaddress')} >
+                  More to Know
+                  </button>    
                 </div>
                 
                 
