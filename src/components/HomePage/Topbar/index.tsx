@@ -8,7 +8,7 @@ const LINKS = [
     },
     {
         name: 'Agenda',
-        link: '/agenda',
+        link: '/agenda/day-1',
     },
     {
         name: 'Speakers',
