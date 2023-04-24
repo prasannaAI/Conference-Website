@@ -43,6 +43,10 @@ const FOOTER_LINK2 = [
     {
         name: 'Venue',
         link: '/venue',
+    },
+    {
+        name: 'Travel',
+        link: '/travel',
     }
 ];
 
