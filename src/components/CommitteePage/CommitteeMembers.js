@@ -1,39 +1,40 @@
 import React from 'react';
+import ProfileCard from "@/components/shared/ProfileCard";
 
 function CommitteeMembers() {
 
   const data = [
     {
       id: 1,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr.-Haridas-M-Nair.jpg',
       name: 'Dr Haridas Nair,',
       department: ' Assistant Professor,',
       doctor: ' Radiation Oncology'
     },
     {
       id: 2,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr.-Ajay-Sasidharan.jpg',
       name: 'Dr Ajay Sasidharan,',
       department: ' Assistant Professor,',
       doctor: ' Radiation Oncology'
     },
     {
       id: 3,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr.-Pushpaja-K.U.jpg',
       name: 'Dr Pushpaja KU ,',
       department: 'Assistant Professor,',
       doctor: ' Radiation Oncology'
     },
     {
       id: 4,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr.-Nikhil-Krishna-Haridas.jpg',
       name: 'Dr Nikhil Krishna Haridas,',
       department: 'Assistant Professor,',
       doctor: ' Medical Oncology'
     },
     {
       id: 5,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr Rishabh.jpg',
       name: ' Dr Rishabh ,',
       department: 'Assistant Professor,',
       doctor: ' Radiation Oncology'
@@ -45,41 +46,34 @@ function CommitteeMembers() {
 
 
   return (
-      <div>
-          <div className="bg-white mt-4">
-              <section className="text-textColor body-font">
-                  <div className="container pt-8 px-20 mx-auto">
-    
-                      <div className="flex  justify-center">
-                          <div className="text-2xl font-medium text-textColor uppercase"> Committee Members </div>
-                      </div>
-                      <div className="flex justify-center flex-wrap -m-4">
-                          {data.map((data) => (
-                              <div id={data.id} className="xl:w-1/4 md:w-1/2 p-4 text-center">
-                                  <div className="bg-gray-100 p-6 rounded-lg">
-                                      <img className="h-40 rounded w-full object-cover object-center mb-6" src={data.src} alt="content" />
-                                      <h2 className="text-lg text-gray-900 font-medium title-font "> 
+
+
+      <div className="bg-white">
+          <section className="py-8 px-6  body-font">
+              <div className="container  mx-auto">
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase"> Scientific Committee </div>
+                  <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
+                      {data.map((data, i) => (
+                          <div key={i}>
+                              <ProfileCard
+                                  name={data?.name}
+                                  designation={data?.department}
+                                  bio={(
+                                      <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1">
                                           {' '}
-                                          {data.name}
+                                          {data?.doctor}
                                           {' '}
-                                      </h2>
-                                      <h3 className="tracking-widest  text-sm text-gray-900  text-center font-medium  mt-2"> 
-                                          {' '}
-                                          { data.department}
-                                          {' '}
-                                      </h3>          
-                                      <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1"> 
-                                          {' '}
-                                          {data.doctor}
-                                          {' '}
+                                          {data?.place}
                                       </div>
-                                  </div>
-                              </div>
-    ))}
-                      </div>
+                                  )}
+                                  image={data?.src}
+                                  key={i}
+                              />
+                          </div>
+                      ))}
                   </div>
-              </section>
-          </div>
+              </div>
+          </section>
       </div>
   );
 }

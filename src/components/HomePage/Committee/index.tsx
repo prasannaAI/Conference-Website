@@ -70,7 +70,7 @@ const CommitteeSection = () => {
                         ))}
                     </div>
                     <div className="flex justify-end py-10 ">
-                        <Link href="/speakers">
+                        <Link href="/committee">
                             <div className="text-color hover:text-color border border-transparent bg-gray-500/30 transition duration-300 hover:bg-gray-500/20 py-4 px-6 rounded text-xl flex justify-between">
                                 <div>See All Members</div>
                                 <div className="ml-8">&rarr;</div>

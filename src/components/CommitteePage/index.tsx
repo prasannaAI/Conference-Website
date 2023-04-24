@@ -5,9 +5,9 @@ import React from 'react';
 import CourseDirector from './CourseDirector';
 import Patrons from './Patrons';
 import OrganizingChairman from './OrganizingChairman';
-// import ScientificCommittee from './ScientificCommittee';
-// import OrganizingSecretaries from './Organizing Secretaries';
-// import CommitteeMembers from './CommitteeMembers';
+import ScientificCommittee from './ScientificCommittee';
+import OrganizingSecretaries from './Organizing Secretaries';
+import CommitteeMembers from './CommitteeMembers';
 
 function Committee() {
   return (
@@ -15,9 +15,9 @@ function Committee() {
           <CourseDirector />
           <Patrons />
           <OrganizingChairman />
-          {/*<OrganizingSecretaries />*/}
-          {/*<ScientificCommittee />*/}
-          {/*<CommitteeMembers />*/}
+          <OrganizingSecretaries />
+          <ScientificCommittee />
+          <CommitteeMembers />
           {/*<Footer />*/}
       </div>
   );

@@ -7,7 +7,7 @@ function OrganizingChairman() {
     const data = [
         {
           id: 1,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr-Sajesh-K-Menon.jpg',
           name: 'Dr Sajesh Menon,',
           department: 'Prof & HOD, Neurosurgery,',
           college: ' Amrita Institute of Medical Sciences,',
@@ -15,7 +15,7 @@ function OrganizingChairman() {
         },
         {
           id: 2,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-K.-Pavithran.jpg',
           name: 'Dr Pavithran K,',
           department: 'Prof & HOD, Medical Oncology,',
           college: ' Amrita Institute of Medical Sciences,',
@@ -23,7 +23,7 @@ function OrganizingChairman() {
         },
         {
           id: 3,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/dr-rakesh-jalali.jpg',
           name: 'Dr Rakesh Jalali, ',
           department: 'Medical Director,',
           college: 'Apollo Proton Centre,',
@@ -33,19 +33,17 @@ function OrganizingChairman() {
       ];
 
   return (
-      <div className="text-primary bg-color">
-          <section className="mx-auto container body-font">
-              <div className="container px-20  mx-auto">
-                  <div className="flex flex-col text-center w-full my-8 pt-4">
-                      <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 uppercase">Organizing Chairman</h1>
-                  </div>
-                  <div className="flex flex-wrap gap-4 justify-center -m-4">
+
+      <div className="bg-white">
+          <section className="py-8 px-6  body-font">
+              <div className="container  mx-auto">
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase"> Organizing Chairman </div>
+                  <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
                       {data.map((data, i) => (
-                          <div key={i} className="p-4 lg:w-1/4 md:w-1/2">
+                          <div key={i}>
                               <ProfileCard
                                   name={data?.name}
                                   designation={data?.department}
-                                  image={data?.src}
                                   bio={(
                                       <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1">
                                           {' '}
@@ -54,9 +52,11 @@ function OrganizingChairman() {
                                           {data?.place}
                                       </div>
                                   )}
+                                  image={data?.src}
+                                  key={i}
                               />
                           </div>
-                        ))}
+                      ))}
                   </div>
               </div>
           </section>

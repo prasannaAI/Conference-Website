@@ -5,7 +5,7 @@ import AgendaSection from './AgendaData';
 const Agenda = () => {
   return (
       <div className="bg-backgroundDark text-color">
-          <div className="mx-auto container py-16 px-6 md:px-0">
+          <div className="mx-auto container py-16 px-6 ">
               <div className="flex">
               </div>
               <div className="flex w-full grid md:grid-cols-2">

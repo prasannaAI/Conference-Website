@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export const AGENDA_DAY_ONE = [
+export const AGENDA_DAY_TWO = [
     {
         title: 'REGISTRATION',
         time: '08.30 am - 09:00 am',

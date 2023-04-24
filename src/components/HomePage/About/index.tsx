@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-      <div className="bg-background text-color py-20 container mx-auto px-6 md:px-0">
+      <div className="bg-background text-color py-20 container mx-auto px-6 ">
           <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="flex flex-col">
                   <div className="text-6xl font-bold">

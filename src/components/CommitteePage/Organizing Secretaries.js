@@ -1,11 +1,12 @@
 import React from 'react';
+import ProfileCard from "@/components/shared/ProfileCard";
 
 function OrganizingSecretaries() {
 
     const data = [
         {
           id: 1,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/dr-bhaskar-vishwanathan.jpg',
           name: 'Dr Bhaskar Vishwanathan,',
           department: 'Professor & HOD, Radiation Oncology,',
           college: ' Amrita Institute of Medical Sciences,',
@@ -13,7 +14,7 @@ function OrganizingSecretaries() {
         },
         {
           id: 2,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-Ayyadurai-R.jpg',
           name: 'Dr Ayyadurai R,',
           department: 'Professor , Neurosurgery,',
           college: ' Amrita Institute of Medical Sciences,',
@@ -21,7 +22,7 @@ function OrganizingSecretaries() {
         },
         {
           id: 3,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr Wesley M Jose.jpg',
           name: 'Dr Wesley M Jose, ',
           department: 'Professor , Medical Oncology,',
           college: 'Apollo Proton Centre,',
@@ -29,7 +30,7 @@ function OrganizingSecretaries() {
         },
         {
           id: 4,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-Sruthi-K.jpg',
           name: 'Dr Sruthi K, ',
           department: 'Assistant Professor, Radiation Oncology,',
           college: 'Amrita Institute of Medical Sciences,',
@@ -39,31 +40,32 @@ function OrganizingSecretaries() {
       ];
 
   return (
-      <div>
-          <div className="bg-white text-secondary px-20 py-8 mt-4  ">
-              <div className="flex justify-center font-medium uppercase pb-12 text-2xl">
-                  <div >Organizing Secretaries</div>
-              </div>
-              <div className="flex flex-wrap  -m-4">
-                  {data.map((data, i) => (
-                      <div className="p-4 lg:w-1/2 flex justify-center" key={i}>
-                          <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                              <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={data.src} />
-                              <div className="flex-grow sm:pl-8">
-                                  <h2 className="title-font font-medium text-lg text-gray-900">{data.name}</h2>
-                                  <h3 className="text-gray-500 mb-3"> 
-                                      {' '}
-                                      {data.department}
-                                      {' '}
-                                  </h3>
-                                  <div className=" text-secondary">{data.college}</div>
-                                  <div className=" text-secondary">{data.place}</div>
-                              </div>
+      <div className="bg-white">
+          <section className="py-8 px-6  body-font">
+              <div className="container  mx-auto">
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase"> Organizing Secretaries </div>
+                  <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
+                      {data.map((data, i) => (
+                          <div key={i}>
+                              <ProfileCard
+                                  name={data?.name}
+                                  designation={data?.department}
+                                  bio={(
+                                      <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1">
+                                          {' '}
+                                          {data?.college}
+                                          {' '}
+                                          {data?.place}
+                                      </div>
+                                  )}
+                                  image={data?.src}
+                                  key={i}
+                              />
                           </div>
-                      </div>
-                  ))}
-              </div >
-          </div>
+                      ))}
+                  </div>
+              </div>
+          </section>
       </div>
   );
 }

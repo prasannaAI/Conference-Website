@@ -5,7 +5,7 @@ const Register = () => {
 
   return (
       <div className="bg-primary p-4 md:p-8">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-6">
               <div className="flex flex-col justify-between lg:flex-row sm:items-center items-start mx-auto">
                   <div className="text-2xl sm:text-4xl font-bold text-color">
                       <span>ISRS</span>

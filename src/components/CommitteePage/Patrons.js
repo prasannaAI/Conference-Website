@@ -8,7 +8,7 @@ function Patrons() {
   const data = [
     {
       id: 1,
-      src: 'https://dummyimage.com/720x400',
+      src: "/assets/images/Dr-Prem-Kumar-Nair.jpg",
       name: 'Dr Prem Nair',
       department: 'Provost',
       college: ' Amrita Vishwa Vidyapeetham',
@@ -16,7 +16,7 @@ function Patrons() {
     },
     {
       id: 2,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr Sanjeev Singh.jpg',
       name: 'Dr Sanjeev Singh',
       department: 'Medical Director',
       college: ' Amrita Institute of Medical Sciences',
@@ -24,7 +24,7 @@ function Patrons() {
     },
     {
       id: 3,
-      src: 'https://dummyimage.com/720x400',
+      src: '/assets/images/Dr.-Gireesh-Kumar-K.-P.jpg',
       name: 'Dr Gireesh Kumar K.P',
       department: 'Principal',
       college: ' Amrita Institute of Medical Sciences',
@@ -35,10 +35,10 @@ function Patrons() {
 
   return (
       <div className="bg-white">
-          <section className="py-8 px-6 md:px-0 body-font">
+          <section className="py-8 px-6  body-font">
               <div className="container pt-8 mx-auto">
                   <div className="text-2xl font-bold text-gray-500/50"> PATRONS </div>
-                  <div className="grid md:grid-cols-2 gap-8 mt-4 pb-20">
+                  <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
                       {data.map((data, i) => (
                           <div key={i}>
                               <ProfileCard

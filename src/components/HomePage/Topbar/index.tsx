@@ -1,19 +1,44 @@
-import React, {useEffect, useState} from 'react';
+import React, { useRef, useEffect, useState} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+import DropdownBtn from './DropdownBtn';
 
-const LINKS = [
-    {
-        name: 'Home',
-        link: '/',
-    },
-    {
-        name: 'Agenda',
-        link: '/agenda/day-1',
-    },
+const MOBILELINKS = [
     {
         name: 'Speakers',
         link: '/speakers',
+    },
+    {
+        name: 'Day - 1',
+        link: '/agenda/day-1',
+    },
+    {
+        name: 'Day - 2',
+        link: '/agenda/day-2',
+    },
+    {
+        name: 'Day - 3',
+        link: '/agenda/day-3',
+    },
+
+    {
+        name: 'Committee',
+        link: '/committee',
+    },
+    {
+        name: 'Registration',
+        link: '/registration',
+    }
+];
+
+const DESKTOPLINKS = [
+    {
+        name: 'Speakers',
+        link: '/speakers',
+    },
+    {
+        name: 'Agenda',
+        link: '',
     },
     {
         name: 'Committee',
@@ -53,7 +78,7 @@ const MobileTopbar = ({ open }: {open: boolean}) => {
                     backgroundPosition: 'center',
                 }}
             >
-                {LINKS.map((link, i) => (
+                {MOBILELINKS.map((link, i) => (
                     <div key={i} className="py-6 bg-background hover:bg-transparent border-b border-opacity-20 text-xl px-10 transition duration-500" >
                         <Link
                             href={link.link}
@@ -72,11 +97,102 @@ const MobileTopbar = ({ open }: {open: boolean}) => {
     );
 };
 
+// const Topbar = () => {
+//
+//     const [open, setOpen] = useState(false);
+//     const [scrolled, setScrolled] = useState(false);
+//
+//     const [isOpen, setIsOpen] = useState(false);
+//
+//     function handleClick() {
+//         setIsOpen(!isOpen)
+//
+//     }
+//
+//     const handleScroll = () => {
+//         if (window.scrollY > window.innerHeight) {
+//             setScrolled(true);
+//         } else {
+//             setScrolled(false);
+//         }
+//     };
+//
+//     useEffect(() => {
+//         window.addEventListener('scroll', handleScroll);
+//         return () => window.removeEventListener('scroll', handleScroll);
+//     }, []);
+//
+//     const router = useRouter();
+//
+//     return (
+//         <nav className={`z-50 absolute w-full text-color ${scrolled ? 'bg-background border-b-2' : router.route === '/' ? 'bg-transparent' : 'bg-background'}`}>
+//             <MobileTopbar open={open} />
+//             <div className="mx-auto container px-0 sm:px-6 flex items-center h-20">
+//                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
+//                     <Link className="text-2xl font-bold whitespace-nowrap" href="/">ISRS - Educational Course</Link>
+//
+//                 </div>
+//                 <div className="w-3/4 flex justify-end items-center">
+//
+//                     <div
+//                         className="z-50 flex relative mr-5 w-6 h-6 flex-col justify-between items-center md:hidden"
+//                         onClick={() => {
+//                             setOpen(!open);
+//                         }}
+//                     >
+//                         {/* hamburger button */}
+//                         <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? 'rotate-45 translate-y-2.5' : ''}`} />
+//                         <span className={`h-1 w-full bg-white rounded-lg transition-all duration-300 ease-in-out ${open ? '!w-0' : 'w-full'}`} />
+//                         <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? '-rotate-45 -translate-y-2.5' : ''}`} />
+//                     </div>
+//
+//                     <div className="hidden md:flex md:pl-5">
+//                         <ul className="flex gap-4 text-textColor">
+//                             {DESKTOPLINKS.map((link, i) =>
+//                                 link.name==="Agenda" ? (
+//                                     <div>
+//                                         <button className="hover:text-lightBlue  flex items-center"
+//                                                 onClick={(handleClick)}>
+//                                             Agenda
+//                                             <img className={` h-8 transition-transform ${isOpen ? "transform rotate-180" : ""}`} src="/assets/icons/down-arrow.svg"  alt="dropIcon" />
+//                                         </button>
+//                                         {isOpen ? <DropdownBtn  /> : ""}
+//
+//                                     </div>
+//                                 ) : (
+//
+//
+//
+//
+//
 const Topbar = () => {
 
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    function handleClick() {
+        setIsOpen(!isOpen);
+    }
+
+    const dropdownRef = useRef(null);
+
+    const handleWindowClick = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('click', handleWindowClick);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('click', handleWindowClick);
+        };
+    }, []);
+
     const handleScroll = () => {
         if (window.scrollY > window.innerHeight) {
             setScrolled(true);
@@ -85,19 +201,15 @@ const Topbar = () => {
         }
     };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     const router = useRouter();
 
     return (
         <nav className={`z-50 absolute w-full text-color ${scrolled ? 'bg-background border-b-2' : router.route === '/' ? 'bg-transparent' : 'bg-background'}`}>
             <MobileTopbar open={open} />
-            <div className="mx-auto container flex items-center h-20">
+            <div className="mx-auto container px-0 sm:px-6 flex items-center h-20">
                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
                     <Link className="text-2xl font-bold whitespace-nowrap" href="/">ISRS - Educational Course</Link>
+
                 </div>
                 <div className="w-3/4 flex justify-end items-center">
 
@@ -114,9 +226,20 @@ const Topbar = () => {
                     </div>
 
                     <div className="hidden md:flex md:pl-5">
-                        <ul className="flex gap-8 text-textColor">
-                            {LINKS.map((link, i) => (
-                                <li key={i} className="container group mx-auto">
+                        <ul className="flex gap-4 text-textColor">
+                            {DESKTOPLINKS.map((link, i) =>
+                                link.name==="Agenda" ? (
+                                    <div ref={dropdownRef}>
+                                        <button className=" flex items-center"
+                                                onClick={handleClick}>
+                                            Agenda
+                                            <img className={` h-8 transition-transform ${isOpen ? "transform rotate-180" : ""}`} src="/assets/icons/down-arrow.svg"  alt="dropIcon" />
+                                        </button>
+                                        {isOpen ? <DropdownBtn /> : ""}
+
+                                    </div>
+                                ) : (
+                                    <li key={i} className=" group mx-auto">
                                     <Link
                                         href={link.link}
                                         className={`flex whitespace-nowrap p-1 transition border-b border-transparent hover:border-color

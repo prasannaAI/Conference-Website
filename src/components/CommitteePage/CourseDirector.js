@@ -2,13 +2,13 @@ import React from 'react';
 
 function CourseDirector() {
   return (
-      <div className="bg-white text-background">
-          <div className="py-8 flex flex-col container mx-auto px-6 md:px-0">
+      <div className="bg-white text-background ">
+          <div className="py-8 flex flex-col container mx-auto px-6 ">
               <div className="flex pb-12 text-2xl mt-20">
                   <div className="text-4xl md:text-6xl font-bold">Committee</div>
               </div>
-              <div className="flex flex-wrap justify-center -m-4 md:mt-8">
-                  <div className="p-4 lg:w-1/2 flex">
+              <div className="flex flex-wrap justify-center  md:mt-8">
+                  <div className=" lg:w-1/2 flex">
                       <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="/assets/images/Dr.-Debnarayan-Dutta.jpg" />
                           <div className="flex-grow sm:pl-8">

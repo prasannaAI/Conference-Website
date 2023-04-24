@@ -29,7 +29,8 @@ const FOOTER_LINK1 = [
 const FOOTER_LINK2 = [
     {
         name: 'About',
-        link: '/about',
+        link: 'https://www.isrsy.org/',
+        target: '_blank'
     },
     {
         name: 'Contact',
@@ -48,7 +49,7 @@ const FOOTER_LINK2 = [
 const Footer = () => {
   return (
       <footer className="bg-background text-white flex flex-col body-font border-t border-gray-600">
-          <div className="container mx-auto overflow-y-hidden pt-16 pb-8 flex h-full lg:items-start lg:flex-row lg:flex-nowrap flex-wrap flex-col">
+          <div className="container mx-auto px-6 overflow-y-hidden pt-16 pb-8 flex h-full lg:items-start lg:flex-row lg:flex-nowrap flex-wrap flex-col">
               <FooterSection1 />
               <div className="lg:grid lg:grid-cols-3 w-full lg:mt-0 mt-20 flex justify-start flex-col md:flex-row">
                   <div className="col-span-2 flex gap-8 justify-center md:justify-end pr-5 min-w-64 md:text-left text-center">
@@ -74,6 +75,7 @@ const Footer = () => {
                                   <li key={index}>
                                       <Link
                                           className="text-textColor hover:text-primary"
+                                          target={item.target}
                                           href={item.link}
                                       >
                                           {item.name}

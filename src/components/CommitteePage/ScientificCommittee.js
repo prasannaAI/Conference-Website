@@ -1,67 +1,68 @@
 import React from 'react';
+import ProfileCard from "@/components/shared/ProfileCard";
 
 function ScientificCommittee() {
 
     const data = [
         {
           id: 1,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr-Prem-Kumar-Nair.jpg',
           name: 'Dr Prem Nair,',
           department: 'Associate Professor, ',
           doctor:'Radiation Oncology',
         },
         {
           id: 2,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-Sreehari-N.-R.jpg',
           name: 'Dr Sreehari N R,',
           department: 'Associate Professor,',
           doctor:'Neurosurgery',          
         },
         {
           id: 3,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-Suhas-Udayakumaran.jpg',
           name: 'Dr Suhas Udayakumaran,',
           department: 'Professor,',
           doctor:'Neurosurgery',          
         },
         {
           id: 4,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr Vijayakumar D K.jpg',
           name: 'Dr Vijayakumar D K,',
           department: 'Prof & HOD,',
           doctor:'Surgical Oncology ',          
         },
         {
           id: 5,
-          src: 'https://dummyimage.com/720x400',
+          src: '/assets/images/Dr.-Dalvin-Thomas.jpg',
           name: 'Dr Dalvin Thomas, ',
           department: 'Assistant Professor,',
           doctor:'Neurosurgery ',          
         },
         {
           id: 6,
-          src: 'https://dummyimage.com/720x400',
+          src: 'assets/images/Dr.-Rakesh-M.jpg',
           name: 'Dr Rakesh M,  ',
           department: 'Assistant Professor,',
           doctor:'Medical Oncology ',          
         },
         {
           id: 7,
-          src: 'https://dummyimage.com/720x400',
+          src: 'assets/images/Dr.-Rajesh-Kannan.jpg',
           name: 'Dr Rajesh Kannan, ',
-          department: 'Assistant Professor,',
-          doctor:'Associate Professor',          
+          department: 'Associate Professor,',
+          doctor:'Radiology',
         },
         {
           id: 8,
-          src: 'https://dummyimage.com/720x400',
-          name: 'Dr Sudhindran S , ',
+          src: 'assets/images/Dr Sudhindran S.jpg',
+          name: 'Dr Sudhindran S, ',
           department: 'Professor,',
           doctor:'Surgical Gastroenterology',          
         },
         {
           id: 9,
-          src: 'https://dummyimage.com/720x400',
+          src: 'assets/images/dr-appu.jpg',
           name: 'Dr Appu Thomas , ',
           department: 'Prof & HOD,',
           doctor:'Surgical urology',          
@@ -71,41 +72,32 @@ function ScientificCommittee() {
       ];
 
   return (
-      <div>
-          <div className="bg-secondary ml-4 rounded-l-[12rem]">
-              <section className="text-textSecondaryColor body-font">
-                  <div className="container pt-8 px-20 mx-auto">
-    
-                      <div className="flex  justify-center">
-                          <div className="text-2xl font-medium text-primary uppercase"> Scientific Committee </div>
-                      </div>
-                      <div className="flex justify-center flex-wrap -m-4">
-                          {data.map((data) => (
-                              <div id={data.id} className="xl:w-1/4 md:w-1/2 pl-4 pt-4 pr-4 text-center">
-                                  <div className="bg-gray-100 p-6 rounded-lg">
-                                      <img className="h-40 rounded w-full object-cover object-center mb-4" src={data.src} alt="content" />
-                                      <h2 className="text-lg text-gray-900 font-medium title-font whitespace-nowrap "> 
-                                            {' '}
-                                            {data.name}
-                                            {' '}
-                                        </h2>
-                                      <h3 className="tracking-widest  text-sm text-gray-900  text-center font-medium  "> 
-                                            {' '}
-                                            { data.department}
-                                            {' '}
-                                        </h3>
-                                      <h4 className="tracking-widest  text-sm text-gray-900  text-center font-medium  "> 
-                                            {' '}
-                                            { data.doctor}
-                                            {' '}
-                                        </h4>
-                                  </div>
-                              </div>
-    ))}
-                      </div>
+      <div className="bg-white">
+          <section className="py-8 px-6  body-font">
+              <div className="container  mx-auto">
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase"> Scientific Committee </div>
+                  <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
+                      {data.map((data, i) => (
+                          <div key={i}>
+                              <ProfileCard
+                                  name={data?.name}
+                                  designation={data?.department}
+                                  bio={(
+                                      <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1">
+                                          {' '}
+                                          {data?.doctor}
+                                          {' '}
+                                          {data?.place}
+                                      </div>
+                                  )}
+                                  image={data?.src}
+                                  key={i}
+                              />
+                          </div>
+                      ))}
                   </div>
-              </section>
-          </div>
+              </div>
+          </section>
       </div>
   );
 }
