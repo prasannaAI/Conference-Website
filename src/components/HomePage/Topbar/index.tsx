@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState} from 'react';
+import React, {useRef, useEffect, useState, MouseEventHandler} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 import DropdownBtn from './DropdownBtn';
@@ -178,8 +178,9 @@ const Topbar = () => {
 
     const dropdownRef = useRef(null);
 
+    // @ts-ignore
     const handleWindowClick = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        if (dropdownRef.current && !dropdownRef.current?.contains(event.target)) {
             setIsOpen(false);
         }
     };
