@@ -61,7 +61,7 @@ export const AGENDA_DAY_ONE = [
     {
         title: 'Group photo / Lunch',
         time: '01.10 pm - 02:10 pm',
-        name: ' SRS/SRT of Sellar Tumors',
+        name: ' ',
         description: () => (
             ''
         )
@@ -101,7 +101,7 @@ export const AGENDA_DAY_ONE = [
     {
         title: 'Closing Remarks for the First Day  ',
         time: '04:50 pm - 05:00 pm',
-        name: ' Discussion on Real Clinical Cases',
+        name: ' ',
         description: () => (
             ''
         )

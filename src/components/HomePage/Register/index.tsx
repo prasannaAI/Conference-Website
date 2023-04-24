@@ -22,13 +22,14 @@ const Register = () => {
                       <div>
                           <Link
                               href="/registration"
-                              className="bg-backgroundDark border-0 text-color py-2 px-8 focus:outline-none hover:bg-backgroundDark/80 rounded text-lg"
+                              className="bg-backgroundDark border-0 text-color font-bold py-2 px-8 focus:outline-none hover:bg-backgroundDark/80 rounded text-lg"
                           >
                               Register
                           </Link>
                       </div>
                   </div>
               </div>
+
           </div>
       </div>
   );

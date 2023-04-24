@@ -34,7 +34,7 @@ const Section = () => {
                       </Link>
                   </div>
                   
-                  <div className="pt-20 lg:pt-10 xl:pt-20 text-left  md:text-lg text-color max-w-[600px] opacity-60">
+                  <div className="pt-20 lg:pt-10 xl:pt-20 text-left font-bold  md:text-lg text-color max-w-[600px] opacity-60">
                       SRS/SRT in Management of Benign Intracranial
                       Tumors, Skull Base Tumors, and Abdominal, Genitourinary,
                       and Gynecological Cancers; Modern Technologies for Radiosurgery

@@ -28,9 +28,9 @@ function MoreInformation() {
 
   return (
     <>
-    <div className="bg-backgroundDark  p-8">
-      <div className="flex justify-center text-color text-2xl ">
-        <div> Contact Us </div>
+    <div className="bg-gray-50 pt-20 p-8">
+      <div className="flex text-2xl ">
+        <div className='text-2xl font-bold text-gray-500/50 uppercase'> Contact Us </div>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  p-10">
         {data.map((data) => (

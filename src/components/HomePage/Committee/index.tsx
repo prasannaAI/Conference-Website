@@ -6,7 +6,6 @@ const CommitteeSection = () => {
     const COMMITTEE_DATA = [
         {
             name: 'Dr. Debnarayan Dutta',
-            designation: 'Director',
             image: '/assets/images/Dr.-Debnarayan-Dutta.jpg',
             bio: (
                 <>
@@ -21,7 +20,6 @@ const CommitteeSection = () => {
         },
         {
             name: 'Dr Mikhail Chernov',
-            designation: 'Co-Director',
             image: '/assets/images/profile.png',
             bio: (
                 <>

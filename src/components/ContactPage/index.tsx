@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
       <div>
           <Contact />
-          <MoreInformtion />
+          {/*<MoreInformtion />*/}
       </div>
   );
 };
