@@ -5,7 +5,7 @@ const FooterSection1 = () => {
     return (
         <div className="flex-shrink-0 md:mx-0  mx-auto text-center lg:text-left">
             <a className="flex font-semibold items-center lg:justify-start justify-center">
-                <span className="text-2xl">ISRS - Educational Course</span>
+                <span className="text-2xl">ISRS</span>
             </a>
             <p className="mt-2 text-sm text-gray-500 mx-auto max-w-[400px]">
                 The International Stereotactic Radiosurgery Society (ISRS) was founded as an international,

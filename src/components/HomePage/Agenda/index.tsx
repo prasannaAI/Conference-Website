@@ -5,10 +5,10 @@ import AgendaSection from './AgendaData';
 const Agenda = () => {
   return (
       <div className="bg-backgroundDark text-color">
-          <div className="mx-auto container py-16">
+          <div className="mx-auto container py-16 px-6 md:px-0">
               <div className="flex">
               </div>
-              <div className="flex w-full grid grid-cols-2">
+              <div className="flex w-full grid md:grid-cols-2">
                   <div>
                       <div className="text-6xl font-bold">Agenda</div>
                       <div className="leading-relaxed mt-8 max-w-[500px]">
@@ -17,7 +17,7 @@ const Agenda = () => {
                           attendees can expect to gain valuable insights and knowledge.
                       </div>
                   </div>
-                  <div>
+                  <div className="mt-10 md:mt-0">
                       <AgendaSection />
                   </div>
               </div>

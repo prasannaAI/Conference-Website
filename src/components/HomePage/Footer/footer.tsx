@@ -47,8 +47,8 @@ const FOOTER_LINK2 = [
 
 const Footer = () => {
   return (
-      <footer className="bg-dark text-white body-font border-t border-gray-600">
-          <div className="container mx-auto pt-16 pb-8 flex lg:items-start lg:flex-row lg:flex-nowrap flex-wrap flex-col">
+      <footer className="bg-background text-white flex flex-col body-font border-t border-gray-600">
+          <div className="container mx-auto overflow-y-hidden pt-16 pb-8 flex h-full lg:items-start lg:flex-row lg:flex-nowrap flex-wrap flex-col">
               <FooterSection1 />
               <div className="lg:grid lg:grid-cols-3 w-full lg:mt-0 mt-20 flex justify-start flex-col md:flex-row">
                   <div className="col-span-2 flex gap-8 justify-center md:justify-end pr-5 min-w-64 md:text-left text-center">

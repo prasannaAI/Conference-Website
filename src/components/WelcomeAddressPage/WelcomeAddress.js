@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function WelcomeAddress() {
   return (
-    <div>WelcomeAddress</div>
-  )
+      <div>WelcomeAddress</div>
+  );
 }
 
-export default WelcomeAddress
+export default WelcomeAddress;

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProfileCard from '@/components/shared/ProfileCard';
+
 function Patrons() {
 
 
@@ -7,25 +9,25 @@ function Patrons() {
     {
       id: 1,
       src: 'https://dummyimage.com/720x400',
-      name: 'Dr Prem Nair,',
-      department: 'Provost,',
+      name: 'Dr Prem Nair',
+      department: 'Provost',
       college: ' Amrita Vishwa Vidyapeetham',
       place: '',
     },
     {
       id: 2,
       src: 'https://dummyimage.com/720x400',
-      name: 'Dr Sanjeev Singh,',
-      department: 'Medical Director,',
-      college: ' Amrita Institute of Medical Sciences,',
+      name: 'Dr Sanjeev Singh',
+      department: 'Medical Director',
+      college: ' Amrita Institute of Medical Sciences',
       place: 'Delhi-NCR',
     },
     {
       id: 3,
       src: 'https://dummyimage.com/720x400',
-      name: 'Dr Gireesh Kumar K.P,',
-      department: 'Principal,',
-      college: ' Amrita Institute of Medical Sciences,',
+      name: 'Dr Gireesh Kumar K.P',
+      department: 'Principal',
+      college: ' Amrita Institute of Medical Sciences',
       place: 'Kochi',
     },
 
@@ -33,40 +35,28 @@ function Patrons() {
 
   return (
       <div className="bg-white">
-          <section className="text-textColor body-font">
-              <div className="container pt-8 px-20 mx-auto">
-    
-                  <div className="flex  justify-center">
-                      <div className="text-2xl font-medium text-textColor"> PATRONS </div>
-                  </div>
-                  <div className="flex justify-center flex-wrap -m-4">
-                      {data.map((data) => (
-                          <div id={data.id} className="xl:w-1/4 md:w-1/2 p-4 text-center">
-                              <div className="bg-gray-100 p-6 rounded-lg">
-                                  <img className="h-40 rounded w-full object-cover object-center mb-6" src={data.src} alt="content" />
-                                  <h2 className="text-lg text-gray-900 font-medium title-font "> 
-                                      {' '}
-                                      {data.name}
-                                      {' '}
-                                  </h2>
-                                  <h3 className="tracking-widest  text-sm text-gray-900  text-center font-medium  mt-2"> 
-                                      {' '}
-                                      { data.department}
-                                      {' '}
-                                  </h3>          
-                                  <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1"> 
-                                      {' '}
-                                      {data.college}
-                                      {' '}
-                                  </div>
-                                  <div className="leading-relaxed whitespace-nowrap font-medium text-gray-900  text-sm mt-1"> 
-                                      {' '}
-                                      {data.place}
-                                      {' '}
-                                  </div>
-                              </div>
+          <section className="py-8 px-6 md:px-0 body-font">
+              <div className="container pt-8 mx-auto">
+                  <div className="text-2xl font-bold text-gray-500/50"> PATRONS </div>
+                  <div className="grid md:grid-cols-2 gap-8 mt-4 pb-20">
+                      {data.map((data, i) => (
+                          <div key={i}>
+                              <ProfileCard
+                                  name={data?.name}
+                                  designation={data?.department}
+                                  bio={(
+                                      <div className="leading-relaxed whitespace-nowrap text-gray-900  font-medium text-sm mt-1">
+                                          {' '}
+                                          {data?.college}
+                                          {' '}
+                                          {data?.place}
+                                      </div>
+                                  )}
+                                  image={data?.src}
+                                  key={i}
+                              />
                           </div>
-    ))}
+                      ))}
                   </div>
               </div>
           </section>

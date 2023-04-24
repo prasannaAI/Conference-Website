@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 
 const LINKS = [
     {
@@ -25,8 +26,21 @@ const LINKS = [
 ];
 
 const MobileTopbar = ({ open }: {open: boolean}) => {
+
+    useEffect(() => {
+        if (open)
+            document.body.classList.add('overflow-hidden');
+        else
+            document.body.classList.remove('overflow-hidden');
+        
+        return () => {
+            document.body.classList.remove('overflow-hidden');
+        };
+    }, [open]);
+
+
     return (
-        <div className={`absolute top-0 text-color bg-background left-0 h-screen w-full transform ${open ? '-translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+        <div className={`absolute top-0 text-color bg-background h-20 z-50 right-0 bottom-0 left-0 overflow-y-hidden h-screen w-full transform ${open ? '-translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-start filter px-5 drop-shadow-md bg-background h-20">
                 <Link className="text-xl font-semibold" href="/">ISRS - Educational Course</Link>
             </div>
@@ -76,8 +90,10 @@ const Topbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const router = useRouter();
+
     return (
-        <nav className={`z-50 absolute w-full text-color ${scrolled ? 'bg-background border-b-2' : 'bg-transparent'}`}>
+        <nav className={`z-50 absolute w-full text-color ${scrolled ? 'bg-background border-b-2' : router.route === '/' ? 'bg-transparent' : 'bg-background'}`}>
             <MobileTopbar open={open} />
             <div className="mx-auto container flex items-center h-20">
                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
