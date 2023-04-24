@@ -180,6 +180,7 @@ const Topbar = () => {
 
     // @ts-ignore
     const handleWindowClick = (event) => {
+        // @ts-ignore
         if (dropdownRef.current && !dropdownRef.current?.contains(event.target)) {
             setIsOpen(false);
         }
