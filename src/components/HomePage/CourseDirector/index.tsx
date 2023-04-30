@@ -5,23 +5,8 @@ const CourseDirector = () => {
 
     const COMMITTEE_DATA = [
         {
-            name: 'Dr. Debnarayan Dutta',
-            designation: 'Director',
-            image: '/assets/images/Dr.-Debnarayan-Dutta.jpg',
-            bio: (
-                <>
-                    Prof & HOD,
-                    <br />
-                    {' '}
-                    Radiation Oncology,
-                    <br />
-                    Amrita Institute of Medical Sciences, Kochi
-                </>
-            ),
-        },
-        {
             name: 'Dr Rakesh Jalali',
-            designation: 'Co-Director',
+            designation: 'Director',
             image: '/assets/images/dr-rakesh-jalali.jpg',
             bio: (
                 <>
@@ -31,6 +16,22 @@ const CourseDirector = () => {
                     Radiation Oncology,
                     <br />
                     Apollo Proton Centre, Chennai
+                </>
+            ),
+        },
+
+        {
+            name: 'Dr. Debnarayan Dutta',
+            designation: 'Co-Director',
+            image: '/assets/images/Dr.-Debnarayan-Dutta.jpg',
+            bio: (
+                <>
+                    Prof & HOD,
+                    <br />
+                    {' '}
+                    Radiation Oncology,
+                    <br />
+                    Amrita Institute of Medical Sciences, Kochi
                 </>
             ),
         },

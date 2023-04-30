@@ -19,20 +19,19 @@ const CommitteeSection = () => {
             ),
         },
         {
-            name: 'Dr Mikhail Chernov',
-            image: '/assets/images/profile.png',
+            name: 'Dr Rakesh Jalali',
+            image: '/assets/images/dr-rakesh-jalali.jpg',
             bio: (
                 <>
-                    Chairman,
+                    Medical Director & HOD,
                     {' '}
                     <br />
                     {' '}
-                    Scientific Committee, ISRS Annex H,
+                    Radiation Oncology,
                     <br />
                     {' '}
-                    Chief Medical Physicist,
-                    <br />
-                    Amrita Institute of Medical Sciences, Kochi
+                    Apollo Proton Centre, Chennai
+
                 </>
             ),
         },

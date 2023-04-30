@@ -150,12 +150,12 @@ const Topbar = () => {
     return (
         <nav className={`z-50 absolute w-full text-color ${scrolled ? 'bg-background border-b-2' : router.route === '/' ? 'bg-transparent' : 'bg-background'}`}>
             <MobileTopbar open={open} />
-            <div className="mx-auto container px-0 sm:px-6 flex items-center h-20">
+            <div className="mx-auto container px-0 sm:px-6 flex items-center h-24">
                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
                     <Link href="/">
 
                     <img
-                        width={150}
+                        width={180}
                         height={80}
                         className="bg-white p-2  lg:mt-0 rounded shadow object-cover object-center rounded"
                         alt="Speaking in Meeting "

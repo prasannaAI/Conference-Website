@@ -4,21 +4,6 @@ import ProfileCard from "@/components/shared/ProfileCard";
 function ScientificCommittee() {
 
     const data = [
-
-        {
-            id: 1,
-            src: "/assets/images/profile.png",
-            name: 'Dr Mikhail Chernov,',
-            department: 'Chairman, ',
-            doctor:'Chief Medical Physicist',
-        },
-        {
-          id: 2,
-          src: '/assets/images/Dr-Prem-Kumar-Nair.jpg',
-          name: 'Dr Prem Nair,',
-          department: 'Associate Professor, ',
-          doctor:'Radiation Oncology',
-        },
         {
           id: 3,
           src: '/assets/images/Dr.-Sreehari-N.-R.jpg',
@@ -83,7 +68,7 @@ function ScientificCommittee() {
       <div className="bg-white">
           <section className="py-8 px-6  body-font">
               <div className="container  mx-auto">
-                  <div className="text-2xl font-bold text-gray-500/50 uppercase"> Scientific Committee </div>
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase">  ISRS Scientific Committee </div>
                   <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
                       {data.map((data, i) => (
                           <div key={i}>

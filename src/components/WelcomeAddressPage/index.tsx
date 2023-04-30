@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const WelcomeAddress = () => {
     return (
@@ -84,11 +85,11 @@ const WelcomeAddress = () => {
 
             <div className="bg-gray-50 text-gray-600 p-8">
                 <div className="container mx-auto">
-                    <div className="text-2xl font-bold pb-8 flex justify-center uppercase sm:text-4xl">
-                        <div>About The Heaven</div>
+                    <div className="text-2xl font-bold pb-8 flex justify-center  sm:text-4xl">
+                        <div>God's Own Country</div>
                         <div>❤️</div>
                     </div>
-                <p className="mb-3 ">Kochi is a vibrant and very pleasant city, and Kerala
+                <div className="mb-3 ">Kochi is a vibrant and very pleasant city, and Kerala
                     is known as an important tourist destination for back waters and ayurveda. Blessings from our
                     beloved
                     Amma with enrich the learning experience and her philosophy of spreading knowledge will be the
@@ -101,7 +102,16 @@ const WelcomeAddress = () => {
                     We look forward to seeing you in Kochi, Kerala and wish you a stimulating and productive
                     participation
                     in the ISRS Educational Course as well as an enjoyable stay.
-                </p>
+
+                </div>
+                    <div className="flex justify-end  ">
+                        <Link href="/travel">
+                            <div className="text-gray-600 hover:text-gray-800 border border-transparent bg-gray-500/30 transition duration-300 hover:bg-gray-500/20 py-4 px-6 rounded text-xl flex justify-between">
+                                <div> Explore Kochi </div>
+                                <div className="ml-8">&rarr;</div>
+                            </div>
+                        </Link>
+                    </div>
 
 
             </div>
