@@ -61,22 +61,7 @@ const TravelPage = () => {
             src: "/assets/images/Places/AndhakaranazhiBeach.webp",
             href: "https://www.google.com/maps/place/Andhakaranazhi+Beach/@9.7468346,76.2821531,17z/data=!3m1!4b1!4m6!3m5!1s0x3b087b250c77555d:0x39f12f7d2e8ed0ff!8m2!3d9.7487249!4d76.2842964!16s%2Fg%2F1w0qzbrs"
         },
-        {
-            id: 8,
-            place: "Athirapally Falls",
-            description: "At a height of 80m, this is the largest waterfall of Kerala and is often regarded as the“ Niagra of India”. The Athirapally Falls is a charming cascade of frothy waters emerging from the Anamudi mountains of the western ghats. The Athirapally gushes across the lush green forest of Vazhachal towards the Arabian sea creating an exquisite panoramic spectacle.",
-            location: " 4 km west of Pattanakkad under Cherthala Taluk",
-            src: "/assets/images/Places/Falls.jpg",
-            href: "https://www.google.com/maps/place/Athirappilly+Water+Falls/@10.2849458,76.5672554,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07f923c2abb0d1:0x1e7af75aa13af78!8m2!3d10.2851072!4d76.5697643!16zL20vMGcxaHg3"
-        },
-        {
-            id: 9,
-            place: "Museum of Kerala History",
-            description: "One of the oldest art and history museum of Kerala is in Kochi founded by philanthropist and entrepreneur Mr Madhavan Nayar. The museum is divided into three sections, the doll museum, museum of Kerala history and gallery of modern art.The statue of Parasurama has been strategically placed outside the hall to pay reverence to the saint who is believed to have brought forth the land of Kerala from the mighty ocean.",
-            location: " 4 km west of Pattanakkad under Cherthala Taluk",
-            src: "/assets/images/Places/mamankam.jpg",
-            href: "https://www.google.com/maps/place/Museum+Of+Kerala+History/@10.0379599,76.3128062,17z/data=!3m1!4b1!4m6!3m5!1s0x3b080db504444075:0x8cf7531f9e8b202f!8m2!3d10.0379599!4d76.3149949!16s%2Fg%2F11c47zwc89"
-        },
+
 
     ]
 

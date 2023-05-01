@@ -37,7 +37,9 @@ const AffiliatedLogo = () => {
                 <div className="font-semibold text-gray-600"> Organized by  {' '} </div>
                 <span className="border-r mx-1 sm:mx-4" />
                 <div className='text-gray-300/90'>  Amrita Institute of Medical Sciences, Kochi & Delhi-NCR </div>
-                </div>
+            </div>
+
+
 
         </div>
 

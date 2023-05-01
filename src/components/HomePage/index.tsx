@@ -10,18 +10,18 @@ import CourseDirector from "@/components/HomePage/CourseDirector";
 import AffiliatedLogo from "@/components/HomePage/Affiliated";
 
 const HomePage = () => {
-  return (
-      <div>
-          <Section />
-          <AffiliatedLogo />
-          <CourseDirector />
-          <About />
-          <Agenda />
-          {/*<Speaker />*/}
-          <Committee />
-          <Register />
-      </div>
-  );
+    return (
+        <div>
+            <Section />
+            <AffiliatedLogo />
+            <CourseDirector />
+            <About />
+            <Agenda />
+            {/*<Speaker />*/}
+            <Committee />
+            <Register />
+        </div>
+    );
 };
 
 export default HomePage;
