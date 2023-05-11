@@ -207,7 +207,8 @@ const Topbar = () => {
                                             {link.name}
                                         </Link>
                                     </li>
-                            ))}
+                                )
+                            )}
                         </ul>
                     </div>
                 </div>
