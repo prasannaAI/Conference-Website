@@ -5,6 +5,20 @@ function ScientificCommittee() {
 
     const data = [
         {
+            id: 1,
+            src: '/assets/images/Dr.-Sreehari-N.-R.jpg',
+            name: 'Dr Mikhail Chernov,',
+            department: 'Chairman,',
+            doctor:'Scinetific Committee, ISRS',
+        },
+        {
+            id: 2,
+            src: '/assets/images/Dr.-Anoop-R.jpg',
+            name: 'Dr Anoop R,',
+            department: 'Associate Professor,',
+            doctor:'Radiation Oncology',
+        },
+        {
           id: 3,
           src: '/assets/images/Dr.-Sreehari-N.-R.jpg',
           name: 'Dr Sreehari N R,',

@@ -6,7 +6,15 @@ function OrganizingChairman() {
 
     const data = [
         {
-          id: 1,
+            id: 1,
+            src: '/assets/images/Dr-Sajesh-K-Menon.jpg',
+            name: 'Annex H,',
+            department: 'Chief Medical Physicist,',
+            college: ' Amrita Institute of Medical Sciences,',
+            place: ' Kochi',
+        },
+        {
+          id: 2,
           src: '/assets/images/Dr-Sajesh-K-Menon.jpg',
           name: 'Dr Sajesh Menon,',
           department: 'Prof & HOD, Neurosurgery,',
@@ -14,7 +22,7 @@ function OrganizingChairman() {
           place: ' Kochi',
         },
         {
-          id: 2,
+          id: 3,
           src: '/assets/images/Dr.-K.-Pavithran.jpg',
           name: 'Dr Pavithran K,',
           department: 'Prof & HOD, Medical Oncology,',
@@ -22,7 +30,7 @@ function OrganizingChairman() {
           place: 'Kochi',
         },
         {
-          id: 3,
+          id: 4,
           src: '/assets/images/dr-rakesh-jalali.jpg',
           name: 'Dr Rakesh Jalali, ',
           department: 'Medical Director,',

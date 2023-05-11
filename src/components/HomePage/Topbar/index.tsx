@@ -74,7 +74,7 @@ const MobileTopbar = ({ open }: {open: boolean}) => {
                     height={80}
                     className="bg-white p-2  lg:mt-0 rounded shadow object-cover object-center rounded"
                     alt="Speaking in Meeting "
-                    src="/assets/images/logo.gif"
+                    src="/assets/logo/Logo.jpg"
                 />
                 </Link>
             </div>
@@ -157,9 +157,9 @@ const Topbar = () => {
                     <img
                         width={180}
                         height={80}
-                        className="bg-white p-2  lg:mt-0 rounded shadow object-cover object-center rounded"
+                        className="bg-white p-2 pr-4 lg:mt-0 rounded shadow object-cover object-center rounded"
                         alt="Speaking in Meeting "
-                        src="/assets/images/logo.gif"
+                        src="/assets/logo/Logo.jpg"
                     />
                     </Link>
 
