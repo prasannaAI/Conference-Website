@@ -1,9 +1,8 @@
 import React from 'react';
-
+import Link from 'next/link';
+import Image from 'next/image';
 
 import AgendaSection from './AgendaData';
-import Link from "next/link";
-import Image from "next/image";
 
 const Agenda = () => {
   return (
@@ -20,11 +19,11 @@ const Agenda = () => {
                           attendees can expect to gain valuable insights and knowledge.
                       </div>
                       <div className="flex justify-start py-10 ">
-                          <a href='/assets/docs/Agenda.pdf' download='Agenda' >
+                          <a href="/assets/docs/Agenda.pdf" download="Agenda" >
                               <div className="text-color hover:text-color border border-transparent bg-gray-500/30 transition duration-300 hover:bg-gray-500/20 py-4 px-6 rounded text-xl flex justify-between">
                                   <div> Download Agenda </div>
                                   <div className="ml-8">
-                                      <Image src='/assets/icons/download-icon.svg' alt="chevron-right" width={30} height={30} />
+                                      <Image src="/assets/icons/download-icon.svg" alt="chevron-right" width={30} height={30} />
                                   </div>
                               </div>
                           </a>

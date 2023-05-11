@@ -22,7 +22,7 @@ const AgendaSection = () => {
   return (
       <div className="flex justify-center items-center h-full">
           <section className="text-gray-600 body-font flex flex-col gap-4 max-w-[500px] w-full">
-              {AGENDA_DATES.map((data, i) =>  (
+              {AGENDA_DATES.map((data, i) => (
                   <Link 
                       className="bg-background group border-gray-800 transition duration-200 border rounded hover:border-gray-500/80 flex items-center text-3xl py-4 px-8 text-color justify-between"
                       href={data.link}

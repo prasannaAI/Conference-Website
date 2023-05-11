@@ -8,7 +8,7 @@ function Patrons() {
   const data = [
     {
       id: 1,
-      src: "/assets/images/Dr-Prem-Kumar-Nair.jpg",
+      src: '/assets/images/Dr-Prem-Kumar-Nair.jpg',
       name: 'Dr Prem Nair',
       department: 'Provost',
       college: ' Amrita Vishwa Vidyapeetham',

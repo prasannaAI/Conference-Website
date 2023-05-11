@@ -6,8 +6,9 @@ import Section from './Section';
 // import Speaker from './Speakers';
 import Register from './Register';
 import Committee from './Committee';
-import CourseDirector from "@/components/HomePage/CourseDirector";
-import AffiliatedLogo from "@/components/HomePage/Affiliated";
+
+import CourseDirector from '@/components/HomePage/CourseDirector';
+import AffiliatedLogo from '@/components/HomePage/Affiliated';
 
 const HomePage = () => {
     return (

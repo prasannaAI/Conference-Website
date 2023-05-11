@@ -1,5 +1,6 @@
 import React from 'react';
-import ProfileCard from "@/components/shared/ProfileCard";
+
+import ProfileCard from '@/components/shared/ProfileCard';
 
 function OrganizingSecretaries() {
 

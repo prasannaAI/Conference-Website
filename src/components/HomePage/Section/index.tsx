@@ -26,16 +26,17 @@ const Section = () => {
                 onLoad={() => setLoaded(true)}
                 className={`${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000 ease-in-out`}
             />
-            <div className="absolute top-0 inset-0 bg-black/50 bg-gradient-to-r from-background to-transparent"/>
+            <div className="absolute top-0 inset-0 bg-black/50 bg-gradient-to-r from-background to-transparent" />
             <div
-                className="flex flex-col justify-center items-start z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-screen-xl mx-auto px-6 ">
+                className="flex flex-col justify-center items-start z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-screen-xl mx-auto px-6 "
+            >
                 <div className="text-white font-semibold text-4xl md:text-5xl 2xl:text-6xl flex flex-col">
                     <div className="flex flex-col md:flex-row md:items-center gap-2">
                         <div>ISRS</div>
-                        <div className="w-2 h-2 rounded-full bg-gray-600 mx-3 hidden md:block"/>
+                        <div className="w-2 h-2 rounded-full bg-gray-600 mx-3 hidden md:block" />
                         <div className="whitespace-nowrap">Educational Course</div>
                     </div>
-                    <div className="flex flex-col gap-2 h-1 w-32 mt-2 rounded-full bg-primary"/>
+                    <div className="flex flex-col gap-2 h-1 w-32 mt-2 rounded-full bg-primary" />
                 </div>
                 <div className="flex flex-col items-start gap-4 mt-10">
                     <div className="text-2xl md:text-4xl flex">
@@ -58,9 +59,10 @@ const Section = () => {
                             </Link>
                         </div>
                         <div className="lg:flex">
-                            <a href='/assets/docs/Brochures.zip' download='Brochures'>
+                            <a href="/assets/docs/Brochures.zip" download="Brochures">
                                 <button
-                                    className="bg-primary text-white px-4 py-2 rounded flex items-center mt-4 lg:ml-4 lg:mt-0">
+                                    className="bg-primary text-white px-4 py-2 rounded flex items-center mt-4 lg:ml-4 lg:mt-0"
+                                >
                                     <div>Download Brochure</div>
                                     <Image
                                         src="/assets/icons/download-icon.svg"
@@ -74,7 +76,8 @@ const Section = () => {
                         </div>
                     </div>
                     <div
-                        className="pt-20 lg:pt-10 xl:pt-20 text-left font-bold  md:text-lg text-color max-w-[600px] opacity-70">
+                        className="pt-20 lg:pt-10 xl:pt-20 text-left font-bold  md:text-lg text-color max-w-[600px] opacity-70"
+                    >
                         SRS/SRT in Management of Benign Intracranial
                         Tumors, Skull Base Tumors, and Abdominal, Genitourinary,
                         and Gynecological Cancers; Modern Technologies for Radiosurgery

@@ -1,5 +1,6 @@
 import React from 'react';
-import ProfileCard from "@/components/shared/ProfileCard";
+
+import ProfileCard from '@/components/shared/ProfileCard';
 
 function ScientificCommittee() {
 
@@ -54,7 +55,7 @@ function ScientificCommittee() {
           doctor:'Medical Oncology ',          
         },
         {
-          id: 8 ,
+          id: 8,
           src: ' assets/images/Dr.-Rajesh-Kannan.jpg',
           name: 'Dr Rajesh Kannan, ',
           department: 'Associate Professor,',

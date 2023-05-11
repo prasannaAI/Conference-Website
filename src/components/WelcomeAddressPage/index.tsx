@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const WelcomeAddress = () => {
     return (
@@ -16,8 +16,11 @@ const WelcomeAddress = () => {
                         <div className="relative flex justify-center  h-64 overflow-hidden sm:h-80 lg:h-full">
 
                             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                                <img className="object-cover object-center rounded" alt="Speaking in Meeting "
-                                     src="/assets/images/public.svg"/>
+                                <img
+                                    className="object-cover object-center rounded"
+                                    alt="Speaking in Meeting "
+                                    src="/assets/images/public.svg"
+                                />
                             </div>
                         </div>
 
@@ -49,7 +52,8 @@ const WelcomeAddress = () => {
             <div className="bg-background text-color p-8">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                        <p className="mb-3  ">The Course is intended for radiation oncologists,
+                        <p className="mb-3  ">
+                            The Course is intended for radiation oncologists,
                             neurosurgeons, medical physicists, residents, and students interested in increasing their
                             knowledge
                             in the field of radiosurgery and stereotactic radiotherapy. The event will be organized in
@@ -61,8 +65,11 @@ const WelcomeAddress = () => {
                             irradiation for
                             management of benign intracranial tumors, skull base tumors, and genitourinary malignancies,
                             as well
-                            as to some of the fundamentals of the physics behind our discipline. </p>
-                        <p className="mb-3 ">This knowledge will be handed down by renowned
+                            as to some of the fundamentals of the physics behind our discipline.
+                            {' '}
+                        </p>
+                        <p className="mb-3 ">
+                            This knowledge will be handed down by renowned
                             experts in the field that have kindly agreed to participate and share their experience with
                             the
                             Course attendees. Free and open discussions on the highlighted topics are planned with
@@ -76,7 +83,8 @@ const WelcomeAddress = () => {
                             surely provide personal and collective growth in our day-to-day clinical practice. Most
                             radiosurgical platforms will be well represented giving a unique opportunity to integrate
                             the
-                            lessons learned to most centers that practice stereotactic irradiation..</p>
+                            lessons learned to most centers that practice stereotactic irradiation..
+                        </p>
                     </div>
 
 
@@ -86,24 +94,25 @@ const WelcomeAddress = () => {
             <div className="bg-gray-50 text-gray-600 p-8">
                 <div className="container mx-auto">
                     <div className="text-2xl font-bold pb-8 flex justify-center  sm:text-4xl">
-                        <div>God's Own Country</div>
+                        <div>God&apos;s Own Country</div>
                         <div>❤️</div>
                     </div>
-                <div className="mb-3 ">Kochi is a vibrant and very pleasant city, and Kerala
-                    is known as an important tourist destination for back waters and ayurveda. Blessings from our
-                    beloved
-                    Amma with enrich the learning experience and her philosophy of spreading knowledge will be the
-                    spirit of
-                    our educational course as well. Through your valuable participation and integration of the selfless
-                    divine blessings we shall strive to leave behind the wonderful gift of knowledge in the field of
-                    radiosurgery, the wisdom and experience to pursue excellence in our discipline so we can give our
-                    patients the best results, thus enhancing quality of life.
+                    <div className="mb-3 ">
+                        Kochi is a vibrant and very pleasant city, and Kerala
+                        is known as an important tourist destination for back waters and ayurveda. Blessings from our
+                        beloved
+                        Amma with enrich the learning experience and her philosophy of spreading knowledge will be the
+                        spirit of
+                        our educational course as well. Through your valuable participation and integration of the selfless
+                        divine blessings we shall strive to leave behind the wonderful gift of knowledge in the field of
+                        radiosurgery, the wisdom and experience to pursue excellence in our discipline so we can give our
+                        patients the best results, thus enhancing quality of life.
 
-                    We look forward to seeing you in Kochi, Kerala and wish you a stimulating and productive
-                    participation
-                    in the ISRS Educational Course as well as an enjoyable stay.
+                        We look forward to seeing you in Kochi, Kerala and wish you a stimulating and productive
+                        participation
+                        in the ISRS Educational Course as well as an enjoyable stay.
 
-                </div>
+                    </div>
                     <div className="flex justify-end  ">
                         <Link href="/travel">
                             <div className="text-gray-600 hover:text-gray-800 border border-transparent bg-gray-500/30 transition duration-300 hover:bg-gray-500/20 py-4 px-6 rounded text-xl flex justify-between">
@@ -114,8 +123,8 @@ const WelcomeAddress = () => {
                     </div>
 
 
-            </div>
                 </div>
+            </div>
 
 
         </div>

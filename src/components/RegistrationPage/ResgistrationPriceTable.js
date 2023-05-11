@@ -51,44 +51,45 @@ function RegistrationPriceTable() {
             </div>
             <div className="relative overflow-x-auto shadow-md rounded-lg">
                 <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    {headerData.map((data) => (
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
+                    {headerData.map((data, i) => (
+                        <thead key={i} className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
 
-                        <th scope="col" className="px-6 py-3">
-                            {data.date}
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            {data.first}
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            {data.second}
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            {data.third}
-                        </th>
-                    </tr>
-                    </thead>
+                                <th scope="col" className="px-6 py-3">
+                                    {data.date}
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    {data.first}
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    {data.second}
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    {data.third}
+                                </th>
+                            </tr>
+                        </thead>
                         ))}
                     <tbody>
-                    {data.map((data) => (
+                        {data.map((data, i) => (
+                            <tr key={i} className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                                <th
+                                    scope="row"
+                                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                >
+                                    {data.title}
+                                </th>
+                                <td className="px-6 py-4">
+                                    {data.first}
+                                </td>
+                                <td className="px-6 py-4">
+                                    {data.second}
+                                </td>
+                                <td className="px-6 py-4">
+                                    {data.third}
+                                </td>
 
-                    <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                        <th scope="row"
-                            className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {data.title}
-                        </th>
-                        <td className="px-6 py-4">
-                            {data.first}
-                        </td>
-                        <td className="px-6 py-4">
-                            {data.second}
-                        </td>
-                        <td className="px-6 py-4">
-                            {data.third}
-                        </td>
-
-                    </tr>
+                            </tr>
 
                     ))}
                     </tbody>
@@ -102,7 +103,8 @@ function RegistrationPriceTable() {
                         Registration includes full program attendance, program dinners and lunches, and a welcome kit.
                     </p>
                     <p>
-                        For hotel reservation support, please contact us at{" "}
+                        For hotel reservation support, please contact us at
+                        {' '}
                         <a href="mailto:isrs2023@aims.amrita.edu" className="text-purple-600 font-medium">
                             isrs2023@aims.amrita.edu
                         </a>

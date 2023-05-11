@@ -1,6 +1,7 @@
 import React, {useRef, useEffect, useState, MouseEventHandler} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+
 import DropdownBtn from './DropdownBtn';
 
 const MOBILELINKS = [
@@ -68,14 +69,14 @@ const MobileTopbar = ({ open }: {open: boolean}) => {
     return (
         <div className={`absolute top-0 text-color bg-background h-20 z-50 right-0 bottom-0 left-0 overflow-y-hidden h-screen w-full transform ${open ? '-translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-start filter px-5 drop-shadow-md bg-background h-20">
-                <Link  href="/">
-                <img
-                    width={150}
-                    height={80}
-                    className="bg-white p-2  lg:mt-0 rounded shadow object-cover object-center rounded"
-                    alt="Speaking in Meeting "
-                    src="/assets/logo/Logo.jpg"
-                />
+                <Link href="/">
+                    <img
+                        width={150}
+                        height={80}
+                        className="bg-white p-2  lg:mt-0 rounded shadow object-cover object-center rounded"
+                        alt="Speaking in Meeting "
+                        src="/assets/logo/Logo.jpg"
+                    />
                 </Link>
             </div>
             <div className="pt-20 bg-background" />
@@ -154,13 +155,13 @@ const Topbar = () => {
                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
                     <Link href="/">
 
-                    <img
-                        width={180}
-                        height={80}
-                        className="bg-white p-2 pr-4 lg:mt-0 rounded shadow object-cover object-center rounded"
-                        alt="Speaking in Meeting "
-                        src="/assets/logo/Logo.jpg"
-                    />
+                        <img
+                            width={180}
+                            height={80}
+                            className="bg-white p-2 pr-4 lg:mt-0 rounded shadow object-cover object-center rounded"
+                            alt="Speaking in Meeting "
+                            src="/assets/logo/Logo.jpg"
+                        />
                     </Link>
 
                 </div>
@@ -181,29 +182,31 @@ const Topbar = () => {
                     <div className="hidden md:flex md:pl-5">
                         <ul className="flex gap-4 text-textColor">
                             {DESKTOPLINKS.map((link, i) =>
-                                link.name==="Agenda" ? (
-                                    <div ref={dropdownRef}>
-                                        <button className=" flex items-center"
-                                                onClick={handleClick}>
+                                link.name==='Agenda' ? (
+                                    <div key={i} ref={dropdownRef}>
+                                        <button
+                                            className=" flex items-center"
+                                            onClick={handleClick}
+                                        >
                                             Agenda
-                                            <img className={` h-8 transition-transform ${isOpen ? "transform rotate-180" : ""}`} src="/assets/icons/down-arrow.svg"  alt="dropIcon" />
+                                            <img className={` h-8 transition-transform ${isOpen ? 'transform rotate-180' : ''}`} src="/assets/icons/down-arrow.svg" alt="dropIcon" />
                                         </button>
-                                        {isOpen ? <DropdownBtn /> : ""}
+                                        {isOpen ? <DropdownBtn /> : ''}
 
                                     </div>
                                 ) : (
                                     <li key={i} className=" group mx-auto">
-                                    <Link
-                                        href={link.link}
-                                        className={`flex whitespace-nowrap p-1 transition border-b border-transparent hover:border-color
+                                        <Link
+                                            href={link.link}
+                                            className={`flex whitespace-nowrap p-1 transition border-b border-transparent hover:border-color
                                             duration-300 ease-in-out
                                             $router.pathname === link.link && 'font-semibold'}
                                         `}
-                                        scroll={false}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                </li>
+                                            scroll={false}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    </li>
                             ))}
                         </ul>
                     </div>

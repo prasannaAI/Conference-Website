@@ -31,7 +31,7 @@ const SpeakerSection = () => {
                       <div className="text-6xl font-bold pb-10">Speakers</div>
                       <div className="text-lg font-medium pb-10 max-w-[500px] opacity-70">
                           Get inspired by our diverse lineup of speakers, who will share their unique insights
-                          and experiences with you. Don't miss the chance to learn from these renowned experts.
+                          and experiences with you. Don`t miss the chance to learn from these renowned experts.
                       </div>
                   </div>
     
