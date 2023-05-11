@@ -55,6 +55,6 @@
     "comma-spacing": [2, { "before": false, "after": true }],
 
     "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
-    "react/jsx-one-expression-per-line": ["warn", { "allow": "single-child" }],
+    "react/jsx-one-expression-per-line": ["warn", { "allow": "single-child" }]
   }
 }
