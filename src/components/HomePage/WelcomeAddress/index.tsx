@@ -37,10 +37,12 @@ const About = () => {
 
                   </div>
                   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                      <img
-                          className="object-cover object-center rounded"
+                      <Image
+                          width={600}
+                          height={600}
+                          className="bg-white pr-12 p-2  lg:mt-0 rounded shadow object-contain rounded"
                           alt="Speaking in Meeting "
-                          src="/assets/images/public.svg"
+                          src="/assets/logo/Logo.jpg"
                       />
                   </div>
               </div>

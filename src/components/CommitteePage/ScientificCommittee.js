@@ -7,10 +7,10 @@ function ScientificCommittee() {
     const data = [
         {
             id: 1,
-            src: '/assets/images/Dr.-Sreehari-N.-R.jpg',
+            src: '/assets/images/profile.png',
             name: 'Dr Mikhail Chernov,',
             department: 'Chairman,',
-            doctor:'Scinetific Committee, ISRS',
+            doctor:'Education Committee, ISRS',
         },
         {
             id: 2,
@@ -83,7 +83,7 @@ function ScientificCommittee() {
       <div className="bg-white">
           <section className="py-8 px-6  body-font">
               <div className="container  mx-auto">
-                  <div className="text-2xl font-bold text-gray-500/50 uppercase">  ISRS Scientific Committee </div>
+                  <div className="text-2xl font-bold text-gray-500/50 uppercase">Scientific Committee </div>
                   <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
                       {data.map((data, i) => (
                           <div key={i}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WelcomeAddress = () => {
     return (
@@ -15,11 +16,13 @@ const WelcomeAddress = () => {
                     <div className="mt-8 grid grid-cols-1  gap-8 lg:grid-cols-2 lg:gap-16">
                         <div className="relative flex justify-center  h-64 overflow-hidden sm:h-80 lg:h-full">
 
-                            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                                <img
-                                    className="object-cover object-center rounded"
+                            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex items-center">
+                                <Image
+                                    width={600}
+                                    height={600}
+                                    className="bg-white pr-12 p-2  lg:mt-0 rounded shadow-lg border object-contain rounded"
                                     alt="Speaking in Meeting "
-                                    src="/assets/images/public.svg"
+                                    src="/assets/logo/Logo.jpg"
                                 />
                             </div>
                         </div>

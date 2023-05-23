@@ -5,7 +5,7 @@ export const AGENDA_DAY_ONE = [
     {
         title: 'REGISTRATION',
         time: '08.00 am - 08:30 am',
-        name: 'Dr. Prem Nair (Kochi, India)',
+        name: '',
         description: () => (
             ''
         )
