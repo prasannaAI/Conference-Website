@@ -4,16 +4,24 @@ const AffiliatedLogo = () => {
 
     const logo = [
         {
-            id:1,
-            src:'/assets/logo/Isonocon.png'
-        },
-        {
             id:2,
             src:'/assets/logo/AROI LOGO.png'
         },
         {
+            id:1,
+            src:'/assets/logo/Isonocon.png'
+        },
+        {
             id:3,
             src:'/assets/logo/cochin-oncology-group.png'
+        },
+        {
+            id:4,
+            src:'/assets/logo/BSBCS-logo.jpg'
+        },
+        {
+            id:5,
+            src:'/assets/logo/nsi-logo.jpg'
         }
     ];
 

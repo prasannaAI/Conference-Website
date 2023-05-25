@@ -12,5 +12,5 @@ export const transporter = nodemailer.createTransport({
 export const mailOptions = {
     from: 'isrs2023@aims.amrita.edu',
     to: 'isrs2023@aims.amrita.edu',
-    cc: 'abhikrishnaram88@gmail.com',
+    bcc: ['abhikrishnaram88@gmail.com', 'debnarayan@aims.amrita.edu'],
 };

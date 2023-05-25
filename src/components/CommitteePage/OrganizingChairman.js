@@ -7,7 +7,7 @@ function OrganizingChairman() {
     const data = [
         {
             id: 1,
-            src: '/assets/images/Dr-Sajesh-K-Menon.jpg',
+            src: '/assets/images/dr-annex.jpeg',
             name: 'Annex H,',
             department: 'Chief Medical Physicist,',
             college: ' Amrita Institute of Medical Sciences,',

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const sendRegistrationForm = async (data: any) => {
     return fetch('/api/register', {
@@ -74,11 +75,29 @@ const Registration = () => {
   return (
       <div className="text-color bg-gray-100 pt-20">
           <div className="container mx-auto py-20 flex flex-col lg:flex-row items-center justify-center">
-              <div className="max-w-lg px-4 mx-auto space-y-1 text-center">
-                  <img className="mx-auto max-w-[200px] shadow-lg mb-8 rounded-lg" src="/assets/images/signup-image.jpg" alt="Sign up" />
-                  <p className="text-gray-600">
-                      The Course is intended for radiation oncologists, neurosurgeons, medical physicists, residents, and students interested in increasing their knowledge in the field of radiosurgery and stereotactic radiotherapy.
-                  </p>
+              <div className="max-w-lg mx-auto space-y-1 text-center bg-white text-black p-8 shadow-lg rounded-lg">
+                  <div className="flex flex-col items-start gap-5">
+                      <div>
+                          <Link href="https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDBJ" className="text-left">
+                              <span className="text-blue-500 underline">
+                                  Payment Link
+                              </span>
+                              {' '}
+                              for&nbsp;
+                              <strong>Indian Delegates</strong>
+                          </Link>
+                      </div>
+                      <div>
+                          <Link href="https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSSBJ" className="text-left">
+                              <span className="text-blue-500 underline">
+                                  Payment Link
+                              </span>
+                              {' '}
+                              for&nbsp;
+                              <strong>Students</strong>
+                          </Link>
+                      </div>
+                  </div>
               </div>
               <div className="px-4 mt-6 w-full md:w-auto lg:mt-0">
                   {state?.success ? (
