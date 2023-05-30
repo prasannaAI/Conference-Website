@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import clsx from 'clsx';
 
 const AffiliatedLogo = () => {
 
@@ -9,11 +11,13 @@ const AffiliatedLogo = () => {
         },
         {
             id:1,
-            src:'/assets/logo/Isonocon.png'
+            src:'/assets/logo/Isonocon.png',
+            className: 'object-contain max-h-[90px]'
         },
         {
             id:3,
-            src:'/assets/logo/cochin-oncology-group.png'
+            src:'/assets/logo/cochin-oncology-group.png',
+            className: 'object-contain max-h-[200px]'
         },
         {
             id:4,
@@ -22,19 +26,42 @@ const AffiliatedLogo = () => {
         {
             id:5,
             src:'/assets/logo/nsi-logo.jpg'
+        },
+        {
+            id:6,
+            src:'/assets/logo/issfn.jpg'
+        },
+        {
+            id:7,
+            src:'/assets/logo/accuray-logo.jpg'
+        },
+        {
+            id:8,
+            src:'/assets/logo/zap-logo.jpg',
+            className:'object-contain max-h-[120px] w-1/5'
         }
     ];
 
 
     return(
         <div>
-            <div className="bg-gray-50 text-gray-700/40 py-12  px-6">
+            <div className="bg-white text-gray-700/40 py-12  px-6">
                 <div className="container mx-auto">
                     <div className="text-xl md:text-2xl lg:text-3xl text-center font-bold"> Affiliated By </div>
-                    <div className="flex justify-evenly  pt-8">
+                    <div className="flex flex-wrap justify-center items-center pt-8 gap-8">
                         {logo.map((item) => (
-                            <img key={item.id} alt="logo" className="object-contain w-[15%]" src={item.src} />
-                    ))}
+                            <Image 
+                                key={item.id}
+                                alt="logo"
+                                className={clsx([
+                                    'object-contain max-h-[150px] w-1/5',
+                                    item.className
+                                ])}
+                                height={200}
+                                width={300}
+                                src={item.src}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
