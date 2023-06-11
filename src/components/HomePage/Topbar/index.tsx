@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState, MouseEventHandler} from 'react';
+import React, {useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
@@ -6,8 +6,8 @@ import DropdownBtn from './DropdownBtn';
 
 const MOBILELINKS = [
     {
-        name: 'Speakers',
-        link: '/speakers',
+        name: 'Faculty',
+        link: '/faculty',
     },
     {
         name: 'Day - 1',
@@ -34,8 +34,8 @@ const MOBILELINKS = [
 
 const DESKTOPLINKS = [
     {
-        name: 'Speakers',
-        link: '/speakers',
+        name: 'Faculty',
+        link: '/faculty',
     },
     {
         name: 'Agenda',

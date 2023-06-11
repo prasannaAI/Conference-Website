@@ -32,10 +32,20 @@ const Registration = () => {
         success: false,
     });
 
+    const [currentImage, setCurrentImage] = useState(0);
+    const [loaded, setLoaded] = useState(false);
+
+    const images = ['/assets/clgImage/aims-kochi.jpg', '/assets/clgImage/aims-faridabad.jpeg',];
+
     useEffect(() => {
         const registration = localStorage.getItem('ISRS-Registration');
         if (registration)
             setState({ loading: false, error: null, success: true });
+        const interval = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage === 0 ? 1 : 0));
+        }, 5000);
+
+        return () => clearInterval(interval);
     }, []);
     
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -72,31 +82,60 @@ const Registration = () => {
         }
     };
 
+    const PAYMENT_LINKS = [
+        {
+            id: 1,
+            name: 'Indian Delegates',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDBJ',
+        },
+        {
+            id: 2,
+            name: 'Foreign Delegates',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSFDK',
+        },
+        {
+            id: 3,
+            name: 'SAARC Country Delegates',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS1'
+        },
+        {
+            id: 4,
+            name: 'Other Country Delegates',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS2'
+        },
+        {
+            id: 5,
+            name: 'ISRS Members',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS3'
+        },
+    ];
+
   return (
-      <div className="text-color bg-gray-100 pt-20">
-          <div className="container mx-auto py-20 flex flex-col lg:flex-row items-center justify-center">
+      <div className="text-color bg-gray-100 pt-20 relative">
+          <Image
+              src={images[currentImage]}
+              alt="Conference"
+              layout="fill"
+              objectFit="cover"
+              onLoad={() => setLoaded(true)}
+              className={`${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity z-10 h-full duration-1000 ease-in-out`}
+          />
+          <div className="absolute top-0 inset-0 bg-black/50 bg-gradient-to-t from-background/20 to-transparent z-20" />
+          <div className="container mx-auto py-20 flex flex-col lg:flex-row items-center justify-center z-50 relative">
               <div className="max-w-lg mx-auto space-y-1 text-center bg-white text-black p-8 shadow-lg rounded-lg">
                   <div className="flex flex-col items-start gap-5">
-                      <div>
-                          <Link href="https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDBJ" className="text-left">
-                              <span className="text-blue-500 underline">
-                                  Payment Link
-                              </span>
-                              {' '}
-                              for&nbsp;
-                              <strong>Indian Delegates</strong>
-                          </Link>
-                      </div>
-                      <div>
-                          <Link href="https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSSBJ" className="text-left">
-                              <span className="text-blue-500 underline">
-                                  Payment Link
-                              </span>
-                              {' '}
-                              for&nbsp;
-                              <strong>Students</strong>
-                          </Link>
-                      </div>
+                      {PAYMENT_LINKS.map((link) => (
+                          <div key={link.id}>
+                              <Link href={link?.link} className="text-left">
+                                  <span className="text-blue-500 underline">
+                                      Payment Link
+                                  </span>
+                                  {' '}
+                                  for&nbsp;
+                                  <strong>{link?.name}</strong>
+                              </Link>
+                          </div>
+                        ))}
                   </div>
               </div>
               <div className="px-4 mt-6 w-full md:w-auto lg:mt-0">

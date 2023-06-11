@@ -13,8 +13,8 @@ const FOOTER_LINK1 = [
         link: '/agenda',
     },
     {
-        name: 'Speakers',
-        link: '/speakers',
+        name: 'Faculty',
+        link: '/faculty',
     },
     {
         name: 'Committee',

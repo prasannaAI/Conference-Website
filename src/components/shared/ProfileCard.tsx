@@ -1,7 +1,7 @@
 const ProfileCard = ({ name, designation, bio, image }: {
     name: string;
     designation: string;
-    bio: JSX.Element;
+    bio?: JSX.Element;
     image: string;
 }) => {
     return (
@@ -10,9 +10,11 @@ const ProfileCard = ({ name, designation, bio, image }: {
             <div className="flex-grow sm:pl-4 mr-4">
                 <h2 className="title-font font-medium text-lg text-gray-900">{name}</h2>
                 <h3 className="text-gray-500 mb-3">{designation}</h3>
-                <p className="mb-4 text-textSecondaryColor">
-                    {bio}
-                </p>
+                {bio && (
+                    <p className="mb-4 text-textSecondaryColor">
+                        {bio}
+                    </p>
+                )}
             </div>
         </div>
     );
