@@ -6,8 +6,8 @@ import InternationalSpeakers from './InternationalSpeakers';
 function Index() {
   return (
       <div>
-          <NationalSpeakers />
           <InternationalSpeakers />
+          <NationalSpeakers />
       </div>
   );
 }
