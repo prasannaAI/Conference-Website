@@ -89,6 +89,11 @@ const Registration = () => {
             link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDBJ',
         },
         {
+            id: 2,
+            name: 'Students',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSSBJ',
+        },
+        {
             id: 3,
             name: 'SAARC Country Delegates',
             link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS1'
