@@ -40,8 +40,8 @@ const WelcomeAddress = () => {
                                     organization of courses with a purpose to disseminate knowledge on current
                                     applications of stereotactic irradiation in management of various neurosurgical and
                                     somatic diseases, and to provide continuous medical education in this field. By this
-                                    time, 19 such events were organized in various countries (Brazil, China, Egypt,
-                                    Finland, Georgia, Hungary, Italy, Latvia, Russia, Switzerland, UK). Although in
+                                    time, 21 such events were organized in various countries (Brazil, China, Costa Rica,
+                                    Egypt, Finland, Georgia, Hungary, Italy, Latvia, Russia, Switzerland, UK). Although in
                                     2020-2021 our activities were interrupted owed to the worldwide COVID pandemic, now
                                     we are going to restore it, and for the first time are organizing the ISRS
                                     Educational Course in South India, in the beautiful state of Kerala.

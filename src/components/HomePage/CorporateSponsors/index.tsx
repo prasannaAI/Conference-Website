@@ -50,7 +50,7 @@ const CorporateSponsors = () => {
                     {' '}
                 </div>
                 <span className="border-r mx-1 sm:mx-4" />
-                <div className="text-gray-300/90">  Amrita Institute of Medical Sciences, Kochi & Delhi-NCR </div>
+                <div className="text-gray-300/90"> International Stereotactic Radiosurgery Society (ISRS); Amrita Institute of Medical Sciences, Kochi & Delhi-NCR. </div>
             </div>
 
 
