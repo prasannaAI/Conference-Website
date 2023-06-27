@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/Section/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/Section/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\docs" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\faculty" />
     </key>
   </component>
@@ -59,7 +59,8 @@
       <workItem from="1682257657344" duration="104000" />
       <workItem from="1687324814313" duration="534000" />
       <workItem from="1687494961327" duration="594000" />
-      <workItem from="1687650771599" duration="3807000" />
+      <workItem from="1687650771599" duration="4113000" />
+      <workItem from="1687842833276" duration="190000" />
     </task>
     <servers />
   </component>

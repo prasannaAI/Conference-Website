@@ -59,7 +59,7 @@ const Section = () => {
                             </Link>
                         </div>
                         <div className="lg:flex">
-                            <a href="/assets/docs/Brochures.zip" download="Brochures">
+                            <a href="/assets/docs/ISRS Brochure 26.06.2023.pdf" download="Brochures">
                                 <button
                                     className="bg-primary text-white px-4 py-2 rounded flex items-center mt-4 lg:ml-4 lg:mt-0"
                                 >
