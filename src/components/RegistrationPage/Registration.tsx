@@ -86,27 +86,27 @@ const Registration = () => {
         {
             id: 1,
             name: 'Indian Delegates',
-            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDBJ',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSIDAJ ',
         },
         {
             id: 2,
             name: 'Students',
-            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSSBJ',
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-kh?ekey=ISRSSAJ ',
         },
         {
             id: 3,
             name: 'SAARC Country Delegates',
-            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS1'
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS4'
         },
         {
             id: 4,
             name: 'Other Country Delegates',
-            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS2'
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS5'
         },
         {
             id: 5,
             name: 'ISRS Members',
-            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS3'
+            link: 'https://aoap.amrita.edu/gateway/index/event-pay-am-razor?ekey=ISRS6 '
         },
     ];
 
