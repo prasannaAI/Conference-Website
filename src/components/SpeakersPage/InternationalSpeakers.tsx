@@ -22,8 +22,9 @@ function InternationalFaculties() {
 
                 </>
             ),
-            image: '/assets/faculty/Amr El-Shehaby.jpg',
+            image: '/assets/faculty/edit_Amr El-Shehaby.jpg',
             country: 'Cairo, Egypt',
+            flag:'/assets/countryflags/egypt.png',
         },
         {
             id: 2,
@@ -42,6 +43,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(12) EnMin Wang.jpg',
             country: 'Shanghai, China',
+            flag:'/assets/countryflags/Flag-China.webp',
         },
         {
             id: 3,
@@ -61,6 +63,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(4) Elitsa Encheva.jpg',
             country: 'Varna, Bulgaria',
+            flag:'/assets/countryflags/Bulgaria.png',
         },
         {
             id: 4,
@@ -76,6 +79,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(7) Ferenc Lakosi.JPG',
             country: 'Kaposvar, Hungary',
+            flag:'/assets/countryflags/Flag-Hungary.webp',
         },
         {
             id: 5,
@@ -94,6 +98,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(11) Selcuk Peker.jpg',
             country: 'Istanbul, Turkey',
+            flag:'/assets/countryflags/Flag_of_Turkey.png',
         },
         {
             id: 6,
@@ -109,6 +114,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(8) Ian McCutcheon.jpg',
             country: 'Houston, TX, USA',
+            flag:'/assets/countryflags/usa.png',
         },
         {
             id: 7,
@@ -124,6 +130,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(5) Pavel Ivanov.jpg',
             country: 'St. Petersburg, Russia',
+            flag:'/assets/countryflags/Flag_of_Russia.png',
         },
         {
             id: 8,
@@ -137,8 +144,9 @@ function InternationalFaculties() {
                     Radiosurgery Center “Sigulda”,
                 </>
             ),
-            image: '/assets/faculty/(9) Maris Mezeckis.jpg',
+            image: '/assets/faculty/edit_mark.jpg',
             country: 'Sigulda, Latvia',
+            flag:'/assets/countryflags/Latvia.png',
         },
         {
             id: 9,
@@ -154,6 +162,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/images/dr-mikhael.png',
             country: 'Tokyo, Japan',
+            flag:'/assets/countryflags/Japan.png',
         },
         {
             id: 10,
@@ -169,6 +178,8 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(2) Sean P. Collins.jpg',
             country: 'Washington DC, USA',
+            flag:'/assets/countryflags/usa.png',
+
         },
         {
             id: 11,
@@ -188,6 +199,8 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(6) Rupesh Kotecha.jpg',
             country: 'Miami, FL, USA',
+            flag:'/assets/countryflags/usa.png',
+
         },
         {
             id: 12,
@@ -203,6 +216,7 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(13) Xinyu Yang - 2.jpg',
             country: 'Tianjin, China',
+            flag:'/assets/countryflags/Flag-China.webp',
         },
         {
             id: 13,
@@ -218,20 +232,22 @@ function InternationalFaculties() {
             ),
             image: '/assets/faculty/(10) Yoshimasa Mori.jpg',
             country: 'Kawasaki, Kanagawa, Japan',
+            flag:'/assets/countryflags/Japan.png',
+
         },
     ];
 
     // @ts-ignore
     return (
-        <div className="bg-white pt-20">
+        <div className="bg-gray-200/100 pt-20">
             <section className="py-8 px-6  body-font">
                 <div className="container pt-8 mx-auto">
                     <div className="text-4xl font-bold text-gray-500/50 mb-8"> International Faculties</div>
                     <div className="grid lg:grid-cols-2 gap-8 mt-4 ">
                         {data.map((data, i) => (
                             <div key={i}>
-                                <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                                    <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={data.image} />
+                                <div className=" bg-gray-200/100 h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                                    <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src={data.image} />
                                     <div className="flex-grow sm:pl-4 mr-4">
                                         <h2 className="title-font font-medium text-lg text-gray-900">{data.name}</h2>
                                         {data.bio && (
@@ -239,7 +255,10 @@ function InternationalFaculties() {
                                                 {data.bio}
                                             </p>
                                         )}
-                                        <h3 className="text-gray-500 mb-3">{data.country}</h3>
+                                        <div className="flex justify-center md:justify-start mb-3">
+                                            <h3 className="text-gray-500 ">{data.country}</h3>
+                                            <img alt="Country Flags" className="ml-2 mt-1" width={30} height={25} src={data.flag} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

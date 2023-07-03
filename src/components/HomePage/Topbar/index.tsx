@@ -2,6 +2,7 @@ import React, {useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
+import DropdownMenu from './DropdownMenu';
 import DropdownBtn from './DropdownBtn';
 
 const MOBILELINKS = [
@@ -48,7 +49,11 @@ const DESKTOPLINKS = [
     {
         name: 'Registration',
         link: '/registration',
-    }
+    },
+    {
+        name: 'More',
+        link: '',
+    },
 ];
 
 const MobileTopbar = ({ open }: {open: boolean}) => {
@@ -114,18 +119,31 @@ const Topbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
     const [isOpen, setIsOpen] = useState(false);
+    const [more, setMore] = useState(false);
 
     function handleClick() {
         setIsOpen(!isOpen);
     }
+    function handleMore() {
+        setMore(!more);
+    }
 
     const dropdownRef = useRef(null);
+    const dropdownmoreRef = useRef(null);
+
 
     // @ts-ignore
     const handleWindowClick = (event) => {
         // @ts-ignore
         if (dropdownRef.current && !dropdownRef.current?.contains(event.target)) {
             setIsOpen(false);
+        }
+    };
+    // @ts-ignore
+    const windowClick = (event) => {
+        // @ts-ignore
+        if (dropdownmoreRef.current && !dropdownmoreRef.current?.contains(event.target)) {
+            setMore(false);
         }
     };
 
@@ -135,6 +153,15 @@ const Topbar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('click', handleWindowClick);
+        };
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('click', windowClick);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('click', windowClick);
         };
     }, []);
 
@@ -154,7 +181,6 @@ const Topbar = () => {
             <div className="mx-auto container px-0 sm:px-6 flex items-center h-24">
                 <div className="w-1/4 ml-5 md:ml-0 flex items-center">
                     <Link href="/">
-
                         <img
                             width={180}
                             height={80}
@@ -192,6 +218,18 @@ const Topbar = () => {
                                             <img className={` h-8 transition-transform ${isOpen ? 'transform rotate-180' : ''}`} src="/assets/icons/down-arrow.svg" alt="dropIcon" />
                                         </button>
                                         {isOpen ? <DropdownBtn /> : ''}
+
+                                    </div>
+                                ) :link.name==='More' ? (
+                                    <div key={i} ref={dropdownmoreRef} >
+                                        <button
+                                            className=" flex items-center"
+                                            onClick={handleMore}
+                                        >
+                                            Show More
+                                            <img className={` h-8 transition-transform ${more ? 'transform rotate-180' : ''}`} src="/assets/icons/down-arrow.svg" alt="dropIcon" />
+                                        </button>
+                                        {more ? <DropdownMenu /> : ''}
 
                                     </div>
                                 ) : (
