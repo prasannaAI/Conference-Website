@@ -26,8 +26,8 @@ function OrganizingSecretaries() {
           src: '/assets/images/Dr Wesley M Jose.jpg',
           name: 'Dr Wesley M Jose, ',
           department: 'Professor , Medical Oncology,',
-          college: 'Apollo Proton Centre,',
-          place: 'Chennai',
+          college: 'Amrita Institute of Medical Sciences,',
+          place: 'Kochi',
         },
         {
           id: 4,

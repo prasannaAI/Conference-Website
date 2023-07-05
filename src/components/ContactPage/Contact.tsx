@@ -10,7 +10,7 @@ const data = [
         border: 1,
     },
     {
-        Name: 'Dr Sruti K',
+        Name: 'Dr Sruthi K',
         College: 'Assistant Professor, radiation Oncology',
         Mail: ' srutik@aims.amrita.edu',
         number: '9901894921',
