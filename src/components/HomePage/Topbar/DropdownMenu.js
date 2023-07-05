@@ -21,6 +21,11 @@ function DropdownBtn() {
                             Contact
                         </button>
                     </Link>
+                    <Link href="/accommodation ">
+                        <button className="hover:text-gray-500 ">
+                            Accommodation
+                        </button>
+                    </Link>
                 </li>
             </div>
         </div>

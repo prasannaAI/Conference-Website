@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/Topbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/Topbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/Topbar/DropdownMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/Topbar/DropdownMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\hotel" />
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\icons" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\countryflags" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -70,7 +71,8 @@
       <workItem from="1687858851857" duration="569000" />
       <workItem from="1688139096977" duration="1028000" />
       <workItem from="1688381396029" duration="5507000" />
-      <workItem from="1688398689021" duration="8627000" />
+      <workItem from="1688398689021" duration="9080000" />
+      <workItem from="1688531838934" duration="14180000" />
     </task>
     <servers />
   </component>
