@@ -268,7 +268,7 @@ const AccommodationPage = () => {
                                     <div className="md:w-1/2">
                                         <img
                                             alt="Hotel"
-                                            src="/assets/hotel/ghala-hotel.jpg"
+                                            src="/assets/hotel/ghala-hotel%20.jpg"
                                             className="object-cover  h-full w-full"
                                         />
                                     </div>

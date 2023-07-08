@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommitteePage/Organizing Secretaries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommitteePage/Organizing Secretaries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactPage/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactPage/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hotel/ghala-hotel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AgendaPage/AgendaItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AgendaPage/AgendaItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayThree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AgendaPage/data/AgendaDayTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/Section/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/Section/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,31 +35,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/office work/isrs-conf/isrs-conf/public/assets/hotel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\office work\\isrs-conf\\isrs-conf\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/office work/isrs-conf/isrs-conf/public/assets/hotel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\office work\\isrs-conf\\isrs-conf\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\hotel" />
-      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\icons" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\countryflags" />
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\faculty" />
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\docs" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\faculty" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\countryflags" />
-      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\docs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,7 +81,8 @@
       <workItem from="1688381396029" duration="5507000" />
       <workItem from="1688398689021" duration="9080000" />
       <workItem from="1688531838934" duration="14709000" />
-      <workItem from="1688558866651" duration="281000" />
+      <workItem from="1688558866651" duration="989000" />
+      <workItem from="1688804434104" duration="15761000" />
     </task>
     <servers />
   </component>

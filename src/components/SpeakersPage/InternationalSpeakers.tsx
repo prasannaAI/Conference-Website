@@ -163,6 +163,7 @@ function InternationalFaculties() {
             image: '/assets/images/dr-mikhael.png',
             country: 'Tokyo, Japan',
             flag:'/assets/countryflags/Japan.png',
+            flagSecond:'/assets/countryflags/Flag_of_Russia.png'
         },
         {
             id: 10,
@@ -235,6 +236,57 @@ function InternationalFaculties() {
             flag:'/assets/countryflags/Japan.png',
 
         },
+        {
+            id: 14,
+            name: 'Dr. Ali Niyaf',
+            bio: (
+                <>
+                    Consultant Neurosurgeon,
+                    {' '}
+                    <br />
+                    {' '}
+                    ADK Hospital,
+                </>
+            ),
+            image: '/assets/faculty/Ali Niyaf.jpg',
+            country: 'Male, Maldives',
+            flag:'/assets/countryflags/Flag-Maldives.webp',
+
+        },
+        {
+            id: 15,
+            name: 'Prof Qamruzzaman Chowdhury',
+            bio: (
+                <>
+                    Director,
+                    {' '}
+                    <br />
+                    {' '}
+                    Labaid Speciality Hospital,
+                </>
+            ),
+            image: '/assets/faculty/Qamruzzaman Chowdhury.jpg',
+            country: 'Dhaka, Bangladesh',
+            flag:'/assets/countryflags/Flag_of_Bangladesh.png',
+
+        },
+        {
+            id: 16,
+            name: 'Dr Davis Miles',
+            bio: (
+                <>
+                    Director,
+                    {' '}
+                    <br />
+                    {' '}
+                    Zapp Radiosurgery System,
+                </>
+            ),
+            image: '/assets/faculty/Qamruzzaman Chowdury.jpg',
+            country: 'England, UK',
+            flag:'/assets/countryflags/uk-flag.png',
+
+        },
     ];
 
     // @ts-ignore
@@ -258,6 +310,9 @@ function InternationalFaculties() {
                                         <div className="flex justify-center md:justify-start mb-3">
                                             <h3 className="text-gray-500 ">{data.country}</h3>
                                             <img alt="Country Flags" className="ml-2 mt-1" width={30} height={25} src={data.flag} />
+                                            {data.name === 'Dr. Mikhail Chernov' && (
+                                                <img src={data.flagSecond} className="ml-2 mt-1" width={30} height={25} alt="Country Flags" />
+                                            )}
                                         </div>
                                     </div>
                                 </div>
