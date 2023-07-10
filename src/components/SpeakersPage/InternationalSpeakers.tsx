@@ -282,7 +282,7 @@ function InternationalFaculties() {
                     Zapp Radiosurgery System,
                 </>
             ),
-            image: '/assets/faculty/Qamruzzaman Chowdury.jpg',
+            image: '/assets/faculty/Male_Avatar.jpg',
             country: 'England, UK',
             flag:'/assets/countryflags/uk-flag.png',
 
