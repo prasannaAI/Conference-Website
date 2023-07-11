@@ -93,7 +93,7 @@ const AccommodationPage = () => {
                             <img
                                 alt="Hilux"
                                 className="w-full h-56 object-cover rounded-lg mb-4"
-                                src="/assets/hotel/hilux.jpg"
+                                src="/assets/hotel/Hilux.jpg"
                             />
                             <div className="flex justify-center">
                                 <h3 className="text-lg font-semibold">Hilux</h3>
