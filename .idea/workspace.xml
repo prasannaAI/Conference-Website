@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactPage/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactPage/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/NationalSpeakers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/Ghala.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/Ghala.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/Hilux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/Hilux.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/HolidayInn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/HolidayInn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/Marriot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/Marriot.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
       <workItem from="1688804434104" duration="16033000" />
       <workItem from="1688966584294" duration="16766000" />
       <workItem from="1689060772739" duration="10200000" />
-      <workItem from="1689074637959" duration="2407000" />
+      <workItem from="1689074637959" duration="3232000" />
     </task>
     <servers />
   </component>

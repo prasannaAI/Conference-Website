@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {AiOutlineInfoCircle} from 'react-icons/ai';
-import {HiOutlineMail} from 'react-icons/Hi';
-import {FiPhone} from 'react-icons/Fi';
-import {TbWorldWww} from 'react-icons/Tb';
+import {HiOutlineMail} from 'react-icons/hi';
+import {FiPhone} from 'react-icons/fi';
+import {TbWorldWww} from 'react-icons/tb';
 
 
 function Marriot() {
