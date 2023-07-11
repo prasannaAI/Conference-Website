@@ -1,347 +1,141 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import Marriot from '@/components/AccommodationPage/Marriot';
+import HolidayInn from '@/components/AccommodationPage/HolidayInn';
+import Hilux from '@/components/AccommodationPage/Hilux';
+import Ghala from '@/components/AccommodationPage/Ghala';
 
 const AccommodationPage = () => {
+    const [modalVisible, setModalVisible] = useState(false);
+    const [selectedHotel, setSelectedHotel] = useState(null);
 
+    // @ts-ignore
+    const toggleModal = (hotel) => {
+        setModalVisible(!modalVisible);
+        setSelectedHotel(hotel);
+    };
+
+    const closeModal = () => {
+        setModalVisible(false);
+        setSelectedHotel(null);
+    };
+
+    useEffect(() => {
+        const handleOutsideClick = (event: MouseEvent) => {
+            const target = event.target as HTMLElement;
+            if (target.classList.contains('modal-overlay')) {
+                closeModal();
+            }
+        };
+
+        if (modalVisible) {
+            document.body.style.overflow = 'hidden'; // Prevent scrolling on the background
+            window.addEventListener('click', handleOutsideClick);
+        } else {
+            document.body.style.overflow = ''; // Restore scrolling on the background
+            window.removeEventListener('click', handleOutsideClick);
+        }
+
+        return () => {
+            document.body.style.overflow = ''; // Restore scrolling on unmount
+            window.removeEventListener('click', handleOutsideClick);
+        };
+    }, [modalVisible]);
+
+    const renderHotelComponent = () => {
+        if (selectedHotel === 'marriot') {
+            return <Marriot />;
+        } else if (selectedHotel === 'holidayInn') {
+            return <HolidayInn />;
+        } else if (selectedHotel === 'hilux') {
+            return <Hilux />;
+        } else if (selectedHotel === 'ghala') {
+            return <Ghala />;
+        } else {
+            return null;
+        }
+    };
 
     return (
-        <div className=" pt-24 bg-white text-background px-6">
-
-
+        <div className="pt-24 bg-white text-background px-6">
             <div className="container mx-auto py-8">
                 <h1 className="text-3xl font-bold text-gray-600 mb-4 uppercase">Accommodation</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
-
-                    {/*1st hotel*/}
-
-                    <a href="https://www.marriott.com/en-us/hotels/cokmc-kochi-marriott-hotel/overview/" target="_blank">
-                        <div className="flex justify-center mt-4">
-                            <div className="w-full max-w-xl rounded-lg overflow-hidden shadow-md bg-white">
-                                <div className="flex flex-col md:flex-row">
-                                    <div className="md:w-1/2">
-                                        <img
-                                            alt="Hotel"
-                                            src="/assets/hotel/hotel.webp"
-                                            className="object-cover  h-full w-full"
-                                        />
-                                    </div>
-                                    <div className="md:w-1/2 p-6">
-                                        <div className="font-medium uppercase text-lg font-bold whitespace-nowrap">
-                                            Marriott ⭐⭐⭐⭐⭐
-                                        </div>
-                                        <div className="text-gray-600">Distance From Venue - 1.6km</div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Deluxe Rooms </h3>
-                                            <p className="text-gray-600"> Single  - 5750 + 12% Tax (Price per day) </p>
-                                            <span className="text-gray-600">* Includes (Buffet Breakfast and wifi) </span>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Double Room</h3>
-                                            <p className="text-gray-600"> - 6500 + 12% Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <div className="flex items-center mt-4">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 64 64"
-                                                    id="email"
-                                                    className="h-4 w-4 mr-2"
-                                                >
-                                                    <path
-                                                        fill="#222"
-                                                        d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"
-                                                    ></path>
-                                                </svg>
-                                                <p className="text-gray-600">
-                                                    <a href="mailto:Frinal.Sunny@marriott.com">Frinal.Sunny@marriott.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-1">
-                                            <div className="flex items-center">
-                                                <img src="/assets/icons/phone.svg" className="h-4 w-4 mr-2" />
-                                                <p className="text-gray-600">
-                                                    +91 8589989058
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div className="flex justify-evenly flex-col gap-4 sm:flex-row ">
+                    {/* Hotel cards */}
+                    <div className="cursor-pointer " onClick={() => toggleModal('holidayInn')}>
+                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                            <img
+                                alt="Holiday Inn"
+                                className="w-full h-56 object-cover rounded-lg mb-4"
+                                src="/assets/hotel/edited-holiday.jpg"
+                            />
+                            <div className="flex flex-col items-center xl:flex-row xl:justify-center gap-0.5 ">
+                                <h3 className="text-lg font-semibold">Holiday Inn</h3>
+                                <div className="mt-0.5">⭐⭐⭐⭐⭐</div>
                             </div>
                         </div>
-                    </a>
-
-
-                    {/* fourth hotel */}
-                    <a href="http://www.holidayinn.com/cochin" target="_blank">
-                        <div className="flex justify-center mt-4">
-                            <div className="w-full max-w-xl rounded-lg overflow-hidden shadow-md bg-white">
-                                <div className="flex flex-col md:flex-row">
-                                    <div className="md:w-1/2">
-                                        <img src="/assets/hotel/holiday-inn-cochin.jpg" alt="Hotel" className="object-cover object-left h-full w-full" />
-                                    </div>
-                                    <div className="md:w-1/2 p-6">
-                                        <div className="font-medium uppercase text-lg font-bold whitespace-nowrap" >
-                                            Holiday
-                                            Inn
-                                            ⭐⭐⭐⭐⭐
-                                        </div>
-                                        <div className="text-gray-600">Distance From Venue - 5.3km</div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Superior Room (Single)</h3>
-                                            <p className="text-gray-600"> - 4500 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Superior Room (Double)</h3>
-                                            <p className="text-gray-600"> - 5000 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Deluxe Room (Single)</h3>
-                                            <p className="text-gray-600"> - 6500 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Deluxe Room (Double)</h3>
-                                            <p className="text-gray-600"> - 7000 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Executive Room (Single)</h3>
-                                            <p className="text-gray-600"> - 8500 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Executive Room (Double)</h3>
-                                            <p className="text-gray-600"> - 9000 + Tax (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <div className="flex items-center mt-4">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 64 64"
-                                                    id="email"
-                                                    className="h-4 w-4 mr-2"
-                                                >
-                                                    <path
-                                                        fill="#222"
-                                                        d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"
-                                                    ></path>
-                                                </svg>
-                                                <p className="text-gray-600">
-                                                    <a href="mailto:reservation.hic@ihg.com">reservation.hic@ihg.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div className="flex items-center ">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 64 64"
-                                                id="email"
-                                                className="h-4 w-4 mr-2"
-                                            >
-                                                <path
-                                                    fill="#222"
-                                                    d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"
-                                                ></path>
-                                                <path
-                                                    fill="#222"
-                                                    d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"
-                                                ></path>
-                                                <path
-                                                    fill="#222"
-                                                    d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"
-                                                ></path>
-                                            </svg>
-                                            <p className="text-gray-600">
-                                                {/*<a href="mailto:reservation.hic@ihg.com">reservation.hic@ihg.com</a>*/}
-                                                <a href="mailto:ardra.v@hicochin.com">ardra.v@hicochin.com</a>
-                                            </p>
-                                        </div>
-
-                                        <div className="mt-1">
-                                            <div className="flex items-center ">
-                                                <img src="/assets/icons/phone.svg" className="h-4 w-4 mr-2" />
-                                                <p className="text-gray-600">
-                                                    +91 484 419 9000
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="">
-                                            <div className="flex items-center ">
-                                                <img src="/assets/icons/phone.svg" className="h-4 w-4 mr-2" />
-                                                <p className="text-gray-600">
-                                                    +1-800-111000
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div className="cursor-pointer" onClick={() => toggleModal('marriot')}>
+                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                            <img
+                                alt="Marriot"
+                                className="w-full h-56 object-cover rounded-lg mb-4"
+                                src="/assets/hotel/hotel.webp"
+                            />
+                            <div className="flex flex-col items-center  md:flex-row md:justify-center gap-0.5 ">
+                                <h3 className="text-lg font-semibold">Marriot</h3>
+                                <div className="mt-0.5">⭐⭐⭐⭐⭐</div>
                             </div>
                         </div>
-                    </a>
-
-                    {/*3 hotel*/}
-                    <a href="http://hi-lux.co.in/" target="_blank">
-                        <div className="flex justify-center mt-4">
-                            <div className="w-full max-w-xl rounded-lg overflow-hidden shadow-md bg-white">
-                                <div className="flex flex-col md:flex-row">
-                                    <div className="md:w-1/2">
-                                        <img
-                                            alt="Hotel"
-                                            src="/assets/hotel/Hilux.jpg"
-                                            className="object-cover object-left h-full w-full"
-                                        />
-                                    </div>
-                                    <div className="md:w-1/2 p-6">
-                                        <div className="font-medium uppercase text-lg font-bold whitespace-nowrap">
-                                            Hilux Inn
-                                        </div>
-                                        <div className="text-gray-600">Distance From Venue - 1km</div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Deluxe Room (Single)</h3>
-                                            <p className="text-gray-600"> - 1800 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">2BHK Apartment</h3>
-                                            <p className="text-gray-600"> - 3000 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <div className="flex items-center mt-4">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 64 64"
-                                                    id="email"
-                                                    className="h-4 w-4 mr-2"
-                                                >
-                                                    <path
-                                                        fill="#222"
-                                                        d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"
-                                                    ></path>
-                                                </svg>
-                                                <p className="text-gray-600">
-                                                    <a href="mailto:hiluxinn1@gmail.com">hiluxinn1@gmail.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-1">
-                                            <div className="flex items-center">
-                                                <img src="/assets/icons/phone.svg" className="h-4 w-4 mr-2" />
-                                                <p className="text-gray-600">
-                                                    +91 8086077333
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div className="cursor-pointer" onClick={() => toggleModal('hilux')}>
+                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                            <img
+                                alt="Hilux"
+                                className="w-full h-56 object-cover rounded-lg mb-4"
+                                src="/assets/hotel/hilux.jpg"
+                            />
+                            <div className="flex justify-center">
+                                <h3 className="text-lg font-semibold">Hilux</h3>
                             </div>
                         </div>
-                    </a>
-
-
-
-
-                    {/*2 hotel*/}
-
-                    <a href="https://ghalaagroup.com/hotels/ghala-residency-kochi" target="_blank">
-                        <div className="flex justify-center mt-4">
-                            <div className="w-full max-w-xl rounded-lg overflow-hidden shadow-md bg-white">
-                                <div className="flex flex-col md:flex-row">
-                                    <div className="md:w-1/2">
-                                        <img
-                                            alt="Hotel"
-                                            src="/assets/hotel/ghala-hotel%20.jpg"
-                                            className="object-cover  h-full w-full"
-                                        />
-                                    </div>
-                                    <div className="md:w-1/2 p-6">
-                                        <div className="font-medium uppercase text-lg font-bold whitespace-nowrap">
-                                            Ghala Residency
-                                        </div>
-                                        <div className="text-gray-600">Distance From Venue - 0.5km</div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Deluxe Room (Single)</h3>
-                                            <p className="text-gray-600"> - 2000 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Royal Deluxe Room (Double)</h3>
-                                            <p className="text-gray-600"> - 2350 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Twin Bird Room</h3>
-                                            <p className="text-gray-600"> - 2650 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <h3 className="font-medium">Royal Suite</h3>
-                                            <p className="text-gray-600"> - 2850 (Price per day) </p>
-                                        </div>
-                                        <div className="mt-2">
-                                            <div className="flex items-center mt-4">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 64 64"
-                                                    id="email"
-                                                    className="h-4 w-4 mr-2"
-                                                >
-                                                    <path
-                                                        fill="#222"
-                                                        d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"
-                                                    ></path>
-                                                    <path
-                                                        fill="#222"
-                                                        d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"
-                                                    ></path>
-                                                </svg>
-                                                <p className="text-gray-600">
-                                                    <a href="mailto:ghalaresidencymail@gmail.com">ghalaresidencymail@gmail.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-1">
-                                            <div className="flex items-center">
-                                                <img src="/assets/icons/phone.svg" className="h-4 w-4 mr-2" />
-                                                <p className="text-gray-600">
-                                                    +91 8089360727
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div className="cursor-pointer" onClick={() => toggleModal('ghala')}>
+                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                            <img
+                                alt="Ghala Residency"
+                                className="w-full h-56 object-cover rounded-lg mb-4"
+                                src="/assets/hotel/ghala-hotel%20.jpg"
+                            />
+                            <div className="flex justify-center">
+                                <h3 className="text-lg font-semibold">Ghala Residency</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
 
+                    {/* Main modal */}
+                    {modalVisible && (
+                        <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
+                            {/* Background overlay */}
+                            <div
+                                className="fixed inset-0 bg-black opacity-50 modal-overlay"
+                                onClick={closeModal}
+                            ></div>
 
+                            {/* Modal content */}
+                            <div className="relative bg-white rounded-lg shadow-md overflow-y-auto max-h-[80vh] ">
+                                {renderHotelComponent()}
+                            </div>
+                        </div>
+                    )}
                 </div>
+
+
+
 
             </div>
         </div>
     );
 };
+
 export default AccommodationPage;
-
-
