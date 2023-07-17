@@ -9,10 +9,9 @@ import Burooj from '@/components/AccommodationPage/Burooj';
 import Emarald from '@/components/AccommodationPage/Emarald';
 import Ginger from '@/components/AccommodationPage/Ginger';
 import Luminar from '@/components/AccommodationPage/Luminar';
-import Auro from '@/components/AccommodationPage/Auro';
 import Aura from '@/components/AccommodationPage/Auro';
 import Renai from '@/components/AccommodationPage/Renai';
-import As from "@/components/AccommodationPage/As";
+import As from '@/components/AccommodationPage/As';
 
 const AccommodationPage = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -84,64 +83,64 @@ const AccommodationPage = () => {
 
     const data = [
         {
-            id: '1',
+            id: 1,
             name: 'Hilux',
             src: '/assets/hotel/Hilux.jpg',
-            toggleModal: 'hilux',
+            toggleModal: 'hilux'
         },
         {
-            id: '2',
+            id: 2,
             name: 'Ghala Residency',
             src: '/assets/hotel/ghala-hotel%20.jpg',
-            toggleModal: 'ghala',
+            toggleModal: 'ghala'
         },
         {
-            id: '3',
+            id: 3,
             name: 'Omnest',
             src: '/assets/hotel/OMNEST.jpg',
-            toggleModal: 'omnest',
+            toggleModal: 'omnest'
         },
         {
-            id: '4',
+            id: 4,
             name: 'Burooj Luxury Hotel',
             src: '/assets/hotel/BUROOJ LUXURY HOTEL.jpg',
-            toggleModal: 'burooj',
+            toggleModal: 'burooj'
         },
         {
-            id: '5',
+            id: 5,
             name: 'Emarald Group Of Hotels & Resorts',
             src: '/assets/hotel/EMARALD GROUP OF HOTELS & RESORTS.jpg',
-            toggleModal: 'emarald',
+            toggleModal: 'emarald'
         },
         {
-            id: '8',
+            id: 8,
             name: 'Ginger',
             src: '/assets/hotel/ginger hotel.webp',
-            toggleModal: 'ginger',
+            toggleModal: 'ginger'
         },
         {
-            id: '7',
+            id: 7,
             name: 'Luminara Suites',
             src: '/assets/hotel/Luminar suites.jpg',
-            toggleModal: 'luminar',
+            toggleModal: 'luminar'
         },
         {
-            id: '6',
+            id: 6,
             name: 'Aura One Hotel',
             src: '/assets/hotel/Aura one hotel (1).jpg',
-            toggleModal: 'aura',
+            toggleModal: 'aura'
         },
         {
-            id: '10',
+            id: 10,
             name: 'Renai Hotel',
             src: '/assets/hotel/renai.jpg',
-            toggleModal: 'renai',
+            toggleModal: 'renai'
         },
         {
-            id: '9',
+            id: 9,
             name: 'As Inn',
             src: '/assets/hotel/as inn.jpg',
-            toggleModal: 'as',
+            toggleModal: 'as'
         }
     ];
 
