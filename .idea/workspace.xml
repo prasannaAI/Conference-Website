@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/Footer/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/Footer/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +34,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/office work/isrs-conf/isrs-conf/public/assets/faculty&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/office work/isrs-conf/isrs-conf/public/assets/hotel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -44,8 +46,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\faculty" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\hotel" />
+      <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\faculty" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\countryflags" />
       <recent name="D:\office work\isrs-conf\isrs-conf\public\assets\icons" />
     </key>
@@ -78,7 +80,13 @@
       <workItem from="1688804434104" duration="16033000" />
       <workItem from="1688966584294" duration="16766000" />
       <workItem from="1689060772739" duration="10200000" />
-      <workItem from="1689074637959" duration="4259000" />
+      <workItem from="1689074637959" duration="5033000" />
+      <workItem from="1689085808535" duration="450000" />
+      <workItem from="1689088919651" duration="599000" />
+      <workItem from="1689139581878" duration="16000" />
+      <workItem from="1689567261416" duration="8472000" />
+      <workItem from="1689582818612" duration="3590000" />
+      <workItem from="1689588705981" duration="4145000" />
     </task>
     <servers />
   </component>

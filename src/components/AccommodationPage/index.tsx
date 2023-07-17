@@ -1,9 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Marriot from '@/components/AccommodationPage/Marriot';
 import HolidayInn from '@/components/AccommodationPage/HolidayInn';
 import Hilux from '@/components/AccommodationPage/Hilux';
 import Ghala from '@/components/AccommodationPage/Ghala';
+import Omnest from '@/components/AccommodationPage/Omnest';
+import Burooj from '@/components/AccommodationPage/Burooj';
+import Emarald from '@/components/AccommodationPage/Emarald';
+import Ginger from '@/components/AccommodationPage/Ginger';
+import Luminar from '@/components/AccommodationPage/Luminar';
+import Auro from '@/components/AccommodationPage/Auro';
+import Aura from '@/components/AccommodationPage/Auro';
+import Renai from '@/components/AccommodationPage/Renai';
+import As from "@/components/AccommodationPage/As";
 
 const AccommodationPage = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -51,19 +60,102 @@ const AccommodationPage = () => {
             return <Hilux />;
         } else if (selectedHotel === 'ghala') {
             return <Ghala />;
+        }else if (selectedHotel === 'omnest') {
+            return <Omnest />;
+        } else if (selectedHotel === 'burooj') {
+            return <Burooj />;
+        }else if (selectedHotel === 'emarald') {
+            return <Emarald />;
+        }else if (selectedHotel === 'ginger') {
+            return <Ginger />;
+        }else if (selectedHotel === 'luminar') {
+            return <Luminar />;
+        }else if (selectedHotel === 'aura') {
+            return <Aura />;
+        } else if (selectedHotel === 'renai') {
+            return <Renai />;
+        } else if (selectedHotel === 'as') {
+            return <As />;
         } else {
             return null;
         }
     };
 
+
+    const data = [
+        {
+            id: '1',
+            name: 'Hilux',
+            src: '/assets/hotel/Hilux.jpg',
+            toggleModal: 'hilux',
+        },
+        {
+            id: '2',
+            name: 'Ghala Residency',
+            src: '/assets/hotel/ghala-hotel%20.jpg',
+            toggleModal: 'ghala',
+        },
+        {
+            id: '3',
+            name: 'Omnest',
+            src: '/assets/hotel/OMNEST.jpg',
+            toggleModal: 'omnest',
+        },
+        {
+            id: '4',
+            name: 'Burooj Luxury Hotel',
+            src: '/assets/hotel/BUROOJ LUXURY HOTEL.jpg',
+            toggleModal: 'burooj',
+        },
+        {
+            id: '5',
+            name: 'Emarald Group Of Hotels & Resorts',
+            src: '/assets/hotel/EMARALD GROUP OF HOTELS & RESORTS.jpg',
+            toggleModal: 'emarald',
+        },
+        {
+            id: '8',
+            name: 'Ginger',
+            src: '/assets/hotel/ginger hotel.webp',
+            toggleModal: 'ginger',
+        },
+        {
+            id: '7',
+            name: 'Luminara Suites',
+            src: '/assets/hotel/Luminar suites.jpg',
+            toggleModal: 'luminar',
+        },
+        {
+            id: '6',
+            name: 'Aura One Hotel',
+            src: '/assets/hotel/Aura one hotel (1).jpg',
+            toggleModal: 'aura',
+        },
+        {
+            id: '10',
+            name: 'Renai Hotel',
+            src: '/assets/hotel/renai.jpg',
+            toggleModal: 'renai',
+        },
+        {
+            id: '9',
+            name: 'As Inn',
+            src: '/assets/hotel/as inn.jpg',
+            toggleModal: 'as',
+        }
+    ];
+
+
     return (
         <div className="pt-24 bg-white text-background px-6">
             <div className="container mx-auto py-8">
                 <h1 className="text-3xl font-bold text-gray-600 mb-4 uppercase">Accommodation</h1>
-                <div className="flex justify-evenly flex-col gap-4 sm:flex-row ">
+                <div className="grid grid-rows-4 grid-rows-none gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     {/* Hotel cards */}
                     <div className="cursor-pointer " onClick={() => toggleModal('holidayInn')}>
-                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                        <div
+                            className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105"
+                        >
                             <img
                                 alt="Holiday Inn"
                                 className="w-full h-56 object-cover rounded-lg mb-4"
@@ -76,7 +168,9 @@ const AccommodationPage = () => {
                         </div>
                     </div>
                     <div className="cursor-pointer" onClick={() => toggleModal('marriot')}>
-                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
+                        <div
+                            className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105"
+                        >
                             <img
                                 alt="Marriot"
                                 className="w-full h-56 object-cover rounded-lg mb-4"
@@ -88,30 +182,23 @@ const AccommodationPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="cursor-pointer" onClick={() => toggleModal('hilux')}>
-                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
-                            <img
-                                alt="Hilux"
-                                className="w-full h-56 object-cover rounded-lg mb-4"
-                                src="/assets/hotel/Hilux.jpg"
-                            />
-                            <div className="flex justify-center">
-                                <h3 className="text-lg font-semibold">Hilux</h3>
+
+                    {data.map((data, i) => (
+                        <div key={data.id} className="cursor-pointer" onClick={() => toggleModal(data.toggleModal)}>
+                            <div
+                                className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105"
+                            >
+                                <img
+                                    alt="Hotel name"
+                                    className="w-full h-56 object-cover rounded-lg mb-4"
+                                    src={data.src}
+                                />
+                                <div className="flex justify-center">
+                                    <h3 className="text-lg font-semibold">{data.name}</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="cursor-pointer" onClick={() => toggleModal('ghala')}>
-                        <div className="w-full max-w-xl p-4 rounded-lg overflow-hidden shadow-md bg-white transition duration-300 ease-in-out transform hover:scale-105">
-                            <img
-                                alt="Ghala Residency"
-                                className="w-full h-56 object-cover rounded-lg mb-4"
-                                src="/assets/hotel/ghala-hotel%20.jpg"
-                            />
-                            <div className="flex justify-center">
-                                <h3 className="text-lg font-semibold">Ghala Residency</h3>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
 
                     {/* Main modal */}
                     {modalVisible && (
@@ -131,11 +218,11 @@ const AccommodationPage = () => {
                 </div>
 
 
-
-
             </div>
         </div>
-    );
+    )
+        ;
 };
 
 export default AccommodationPage;
+
