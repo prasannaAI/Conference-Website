@@ -272,7 +272,7 @@ function InternationalFaculties() {
         },
         {
             id: 16,
-            name: 'Dr Davis Miles',
+            name: 'Dr David Miles',
             bio: (
                 <>
                     Director,

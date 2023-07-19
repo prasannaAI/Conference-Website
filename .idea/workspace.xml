@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5abac01-a90f-492b-9628-2e6aca844129" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccommodationPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeakersPage/InternationalSpeakers.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,9 @@
       <workItem from="1689139581878" duration="16000" />
       <workItem from="1689567261416" duration="8472000" />
       <workItem from="1689582818612" duration="3590000" />
-      <workItem from="1689588705981" duration="4961000" />
+      <workItem from="1689588705981" duration="5620000" />
+      <workItem from="1689669383352" duration="17000" />
+      <workItem from="1689754159463" duration="88000" />
     </task>
     <servers />
   </component>
