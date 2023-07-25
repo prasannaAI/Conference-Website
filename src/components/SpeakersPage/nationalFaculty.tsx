@@ -222,7 +222,7 @@ function Faculty() {
         },
         {
             id: 41,
-            name: 'Prof Rahul Krishnamurthy ',
+            name: 'Prof Rahul Krishnatry ',
             image: '/assets/faculty/Male_Avatar.jpg',
             country: 'Mumbai, India',
         },

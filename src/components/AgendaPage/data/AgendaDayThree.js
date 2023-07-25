@@ -34,7 +34,7 @@ export const AGENDA_DAY_THREE = [
                     SRS/SRT of Liver Cancers
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor Rahul Krishnamurthy (Mumbai, India)
+                    &rarr; Speaker: Professor Rahul Krishnatry (Mumbai, India)
                 </div>
                 <div className="font-extrabold  underline mb-4">
                     Irradiation of Gastrointestinal Cancers
