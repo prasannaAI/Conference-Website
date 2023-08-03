@@ -37,7 +37,7 @@ function Faculty() {
         {
             id: 8,
             name: 'Dr Amitabh Roy   ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            image: '/assets/nationalFaculty/Amitabh Roy.jpeg',
             country: 'Kolkata, India',
         },
         {
@@ -49,7 +49,7 @@ function Faculty() {
         {
             id: 10,
             name: 'Prof Adesh Srivastava   ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            image: '/assets/nationalFaculty/AdeshSrivastava.jpeg',
             country: 'Bhopal, India',
         },
         {
@@ -83,15 +83,9 @@ function Faculty() {
             country: 'Bengaluru, India',
         },
         {
-            id: 17,
-            name: 'Prof Deepak Aggarwal  ',
-            image: '/assets/faculty/Male_Avatar.jpg',
-            country: 'Delhi, India',
-        },
-        {
             id: 18,
             name: 'Prof Dilip Panikar ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            image: '/assets/nationalFaculty/Dilip Panikar.jpeg',
             country: 'Kochi, India',
         },
         {
@@ -109,7 +103,7 @@ function Faculty() {
         {
             id: 21,
             name: 'Dr. HV Easwer ',
-            image: '/assets/nationalFaculty/easwer.jpg',
+            image: '/assets/nationalFaculty/HV Easwer.jpeg',
             country: 'Trivandrum, India',
         },
         {
@@ -127,7 +121,7 @@ function Faculty() {
         {
             id: 24,
             name: 'Prof Kanwaljeet Garg ',
-            image: '/assets/nationalFaculty/kanwaljeet.jpg',
+            image: '/assets/nationalFaculty/KanwaljeetGarg.jpeg',
             country: 'Delhi, India',
         },
         {
@@ -159,12 +153,6 @@ function Faculty() {
             name: 'Dr. Maheep Singh Gaur ',
             image: '/assets/nationalFaculty/maheep.jpg',
             country: 'Meerut, India',
-        },
-        {
-            id: 30,
-            name: 'Prof Milind Sankhe ',
-            image: '/assets/faculty/Male_Avatar.jpg',
-            country: 'Mumbai, India',
         },
         {
             id: 31,
@@ -211,25 +199,19 @@ function Faculty() {
         {
             id: 39,
             name: 'Dr. Rajesh Kinhikar ',
-            image: '/assets/nationalFaculty/rajesh_kinhikar.jpeg',
+            image: '/assets/nationalFaculty/Rajesh Kinhikar.jpeg',
             country: 'Mumbai, India',
         },
         {
             id: 40,
             name: 'Dr. Ramesh S Bilimagga ',
-            image: '/assets/nationalFaculty/ramesh.jpg',
+            image: '/assets/nationalFaculty/Ramesh Bilimagga.jpeg',
             country: 'Bengaluru, India',
         },
         {
             id: 41,
             name: 'Prof Rahul Krishnatry ',
             image: '/assets/nationalFaculty/rahul.jpg',
-            country: 'Mumbai, India',
-        },
-        {
-            id: 42,
-            name: 'Prof Reena Engineer ',
-            image: '/assets/faculty/Male_Avatar.jpg',
             country: 'Mumbai, India',
         },
         {
@@ -249,12 +231,6 @@ function Faculty() {
             name: 'Dr. Sridhar Papaiah Susheela',
             image: '/assets/nationalFaculty/sridhar.jpg',
             country: 'Bengaluru, India',
-        },
-        {
-            id: 46,
-            name: 'Dr. Sandip Vaishya ',
-            image: '/assets/faculty/Male_Avatar.jpg',
-            country: 'Gurugram, India',
         },
         {
             id: 47,
