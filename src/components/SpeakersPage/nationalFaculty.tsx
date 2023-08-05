@@ -36,7 +36,7 @@ function Faculty() {
         },
         {
             id: 8,
-            name: 'Dr Amitabh Roy   ',
+            name: 'Dr Amitabh Ray  ',
             image: '/assets/nationalFaculty/Amitabh Roy.jpeg',
             country: 'Kolkata, India',
         },
@@ -66,7 +66,7 @@ function Faculty() {
         },
         {
             id: 13,
-            name: 'Dr. Bhusan Zade ',
+            name: 'Dr.Bhooshan Zade ',
             image: '/assets/nationalFaculty/bhooshan.jpg',
             country: 'Pune, India',
         },
@@ -186,8 +186,8 @@ function Faculty() {
         },
         {
             id: 37,
-            name: 'Dr Rajesh Vashistha ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            name: 'Dr Rajesh vashistha ',
+            image: '/assets/nationalFaculty/Rajesh vashistha.jpeg',
             country: 'Bathinda, India',
         },
         {
@@ -217,7 +217,7 @@ function Faculty() {
         {
             id: 43,
             name: 'Prof Sajesh Menon ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            image: '/assets/nationalFaculty/Dr-Sajesh-K-Menon (1).jpg',
             country: 'Kochi, India',
         },
         {
@@ -253,7 +253,7 @@ function Faculty() {
         {
             id: 50,
             name: 'Prof Subhash Gupta ',
-            image: '/assets/faculty/Male_Avatar.jpg',
+            image: '/assets/nationalFaculty/Dr Shubash Gupta.jpeg',
             country: 'Delhi, India',
         },
         {
@@ -307,7 +307,7 @@ function Faculty() {
         {
             id: 61,
             name: 'Prof Vedang Murthy ',
-            image: '/assets/nationalFaculty/vedang.jpg',
+            image: '/assets/nationalFaculty/Vedang Murthy.jpeg',
             country: 'Mumbai, India',
         },
         {
@@ -315,6 +315,30 @@ function Faculty() {
             name: 'Prof VP Singh ',
             image: '/assets/nationalFaculty/vpsingh.jpg',
             country: 'Delhi, India',
+        },
+        {
+            id: 63,
+            name: 'Dr Ajaya Kumar',
+            image: '/assets/nationalFaculty/Dr Ajaya Kumar.jpeg',
+            country: '',
+        },
+        {
+            id: 64,
+            name: 'Dr Ramesh Sivaramakrishnan',
+            image: '/assets/nationalFaculty/Dr Ramesh Sivaramakrishnan.jpeg',
+            country: '',
+        },
+        {
+            id: 65,
+            name: ' Prof Suresh Kumar',
+            image: '/assets/faculty/Male_Avatar.jpg',
+            country: '',
+        },
+        {
+            id: 66,
+            name: 'Dr Vijayagopal KS',
+            image: '/assets/nationalFaculty/Dr Vijayagopal KS.jpeg',
+            country: '',
         },
     ];
 
