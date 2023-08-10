@@ -35,7 +35,7 @@ function CommitteeMembers() {
     },
     {
       id: 5,
-      src: '/assets/images/Dr Rishabh.jpg',
+      src: '/assets/images/Dr Rishabh1.jpeg',
       name: ' Dr Rishabh ,',
       department: 'Assistant Professor,',
       doctor: ' Radiation Oncology'

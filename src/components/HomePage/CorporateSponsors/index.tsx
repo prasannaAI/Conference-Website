@@ -13,6 +13,16 @@ const CorporateSponsors = () => {
             id:8,
             src:'/assets/logo/zap-logo.jpg',
             className:'object-contain max-h-[100px] w-1/5'
+        },
+        {
+            id:9,
+            src:'/assets/logo/C RAD.png',
+            className:'object-contain max-h-[100px] w-1/5'
+        },
+        {
+            id:10,
+            src:'/assets/logo/Elekta_RGB_positive_logo_clearspace-01.jpg',
+            className:'object-contain max-h-[100px] w-1/5'
         }
     ];
 

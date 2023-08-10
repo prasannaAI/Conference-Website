@@ -6,7 +6,6 @@ function Faculty() {
         {
             id: 3,
             name: 'Prof. Aditya Gupta ',
-            bio: 'President',
             image: '/assets/nationalFaculty/aditya.jpg',
             country: 'Gurugram, India',
         },
@@ -144,7 +143,7 @@ function Faculty() {
         },
         {
             id: 28,
-            name: 'Dr Makuny Dinesh ',
+            name: 'Dr Dinesh Mangalore',
             image: '/assets/nationalFaculty/makuny.jpg',
             country: 'Kozhikode, India',
         },
@@ -319,26 +318,50 @@ function Faculty() {
         {
             id: 63,
             name: 'Dr Ajaya Kumar',
-            image: '/assets/nationalFaculty/Dr Ajaya Kumar.jpeg',
-            country: '',
+            image: '/assets/nationalFaculty/ajayakumar.jpeg',
+            country: 'Calicut, India',
         },
         {
             id: 64,
             name: 'Dr Ramesh Sivaramakrishnan',
             image: '/assets/nationalFaculty/Dr Ramesh Sivaramakrishnan.jpeg',
-            country: '',
+            country: 'Thrissur, India',
         },
         {
             id: 65,
             name: ' Prof Suresh Kumar',
             image: '/assets/faculty/Male_Avatar.jpg',
-            country: '',
+            country: 'Kottayam, India',
         },
         {
             id: 66,
             name: 'Dr Vijayagopal KS',
             image: '/assets/nationalFaculty/Dr Vijayagopal KS.jpeg',
-            country: '',
+            country: 'Calicut, India',
+        },
+        {
+            id: 67,
+            name: 'Dr Arun Lal',
+            image: '/assets/nationalFaculty/Dr Arun Lal.jpeg',
+            country: 'Kochi, India',
+        },
+        {
+            id: 68,
+            name: 'Saju Bhasi',
+            image: '/assets/nationalFaculty/Saju Bhasi.jpeg',
+            country: 'Trivandrum, India',
+        },
+        {
+            id: 69,
+            name: 'Manish Chomal',
+            image: '/assets/nationalFaculty/Manish Chomal1.jpeg',
+            country: 'Jaipur, India',
+        },
+        {
+            id: 70,
+            name: 'Dr Saravan Kumar',
+            image: '/assets/nationalFaculty/Dr Saravan Kumar1.jpeg',
+            country: 'Coimbatore, India',
         },
     ];
 
@@ -354,11 +377,7 @@ function Faculty() {
                                     <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src={data.image} />
                                     <div className="flex-grow sm:pl-4 mr-4">
                                         <h2 className="title-font font-medium text-lg text-gray-900">{data.name}</h2>
-                                        {data.bio && (
-                                            <p className="text-gray-800">
-                                                {data.bio}
-                                            </p>
-                                        )}
+
                                         <h3 className="text-gray-500 mb-3">{data.country}</h3>
                                     </div>
                                 </div>
