@@ -8,7 +8,7 @@ function InternationalFaculties() {
     const data = [
         {
             id: 1,
-            name: 'Professor Amr El-Shahaby',
+            name: 'Professor Amr El-Shehaby',
             bio: (
                 <>
                     Department of Neurosurgery,
