@@ -19,10 +19,10 @@ export const AGENDA_DAY_THREE = [
                     SRS/SRT for Abdominal Cancers
                 </div>
                 <div className="mb-4">
-                    &rarr; Chairs: Professor CS Madhu (Kochi, India); Dr. Ramesh S Bilimagga (Bengaluru, India)
+                    &rarr; Chairs: Professor KL Jayakumar (Nagerkoil, India); Dr. Ramesh S Bilimagga (Bengaluru, India)
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Shirley Lewis (Manipal, India); Dr. Maris Mezeckis (Sigulda, Latvia)
+                    &rarr; Moderators: Dr. Ajaya Kumar (Calicut, India); Dr. Maris Mezeckis (Sigulda, Latvia)
                 </div>
                 <div className="font-extrabold  underline mb-4">
                     SRS/SRT of Pancreatic Cancers
@@ -34,16 +34,16 @@ export const AGENDA_DAY_THREE = [
                     SRS/SRT of Liver Cancers
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor Rahul Krishnatry (Mumbai, India)
+                    &rarr; Speaker: Dr. Shirley Lewis (Manipal, India)
                 </div>
                 <div className="font-extrabold  underline mb-4">
-                    Irradiation of Gastrointestinal Cancers
+                    Overview of SRS/SRT in gastrointestinal indications
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor Reena Engineer (Mumbai, India)
+                    &rarr; Speaker: Professor Rahul Krishnatry (Mumbai, India)
                 </div>
                 <div className="font-extrabold underline ">
-                    Overall Discussion
+                    Discussion
                 </div>
             </>
         ),
@@ -52,7 +52,7 @@ export const AGENDA_DAY_THREE = [
         )
     },
     {
-        title: 'Plenary Lecture XI  ',
+        title: 'Plenary Lecture X  ',
         time: '10.20 am - 10:50 am',
         name:  (
             <>
@@ -72,7 +72,7 @@ export const AGENDA_DAY_THREE = [
         )
     },
     {
-        title: ' Plenary Lecture XII  ',
+        title: ' Plenary Lecture XI  ',
         time: '10.50 am - 11:20 am',
         name: (
             <>
@@ -80,7 +80,7 @@ export const AGENDA_DAY_THREE = [
                     Irradiation of Gynecological Cancers
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr Kinjal Jani (Ahmedabad, India); Professor Qamruzzaman Chowdhury (Dhaka, Bangladesh)
+                    &rarr; Moderators: Dr Kinjal Jani (Ahmedabad, India); Prof Suresh Kumar (Kottayam, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Dr. Ferenc Lakosi (Kaposvár, Hungary)
@@ -108,7 +108,7 @@ export const AGENDA_DAY_THREE = [
                     Radiosurgery of Prostate Cancer
                 </div>
                 <div className="mb-4">
-                    &rarr; Chairs: Professor Ginil Kumar Pooleri (Kochi, India); Professor KL Jayakumar (Nagerkoil, India), Dr Makuny Dinesh (Kozhikode, India)
+                    &rarr; Chairs: Professor Ginil Kumar Pooleri (Kochi, India);  Dr Makuny Dinesh (Kozhikode, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Moderators: Dr. Francis James (Trivandam, India); Dr. Ferenc Lakosi (Kaposvár, Hungary)
@@ -117,7 +117,7 @@ export const AGENDA_DAY_THREE = [
                     Radiosurgery of Prostate Cancer: Technical and Technological Aspects
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor Sean Philip Collins (Washington, DC, USA)
+                    &rarr; Speaker: Professor Vedang Murthy (Mumbai, India)
                 </div>
                 <div className="font-extrabold  underline mb-4">
                     Radiosurgery of Primary and Recurrent Prostate Cancer: Results
@@ -132,7 +132,7 @@ export const AGENDA_DAY_THREE = [
                     &rarr; Speaker: Professor Elitsa Encheva (Varna, Bulgaria)
                 </div>
                 <div className="font-extrabold underline ">
-                    Overall Discussion
+                    Discussion
                 </div>
             </>
         ),
@@ -150,17 +150,17 @@ export const AGENDA_DAY_THREE = [
     },
     {
         title: 'Discussion on Real Clinical Cases ',
-        time: '02.00 pm - 03:15 pm',
+        time: '02.00 pm - 03:00 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
                     Somatic Indications
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Professor Sean Philip Collins (Washington, DC, USA); Professor Elitsa Encheva (Varna, Bulgaria)
+                    &rarr; Moderators: Dr. Ferenc Lakosi (Kaposvár, Hungary); Professor Elitsa Encheva (Varna, Bulgaria)
                 </div>
                 <div className="mb-4">
-                    &rarr; Speakers: Dr. Maris Mezeckis (Sigulda, Latvia); Professor Debnarayan Dutta (Kochi, India); Dr. Anusheel Munshi (Delhi, India); Professor Sean Philip Collins (Washington, DC, USA); Dr. Vineeta Goel (Delhi, India)
+                    &rarr; Speakers: Dr. Maris Mezeckis (Sigulda, Latvia); Dr. Anusheel Munshi (Delhi, India); Professor Debnarayan Dutta (Kochi, India); Dr. Vineeta Goel (Delhi, India)
                 </div>
             </>
         ),
@@ -169,27 +169,18 @@ export const AGENDA_DAY_THREE = [
         )
     },
     {
-        title: 'Satellite Symposium of Amrita Institute of Medical Sciences',
-        time: '03.15 pm - 04:15 pm',
+        title: 'Plenary Lecture XII  ',
+        time: '03.00 pm - 03:30 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
-                    Radiosurgery of Brain Metastases
+                    Technologies for SRS and SRT: Comparison of Advantages and Limitations
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Uday Krishna (Chennai, India); Professor Selcuk Peker (Istanbul, Turkey)
-                </div>
-                <div className="font-extrabold  underline mb-4">
-                    SRS of Brain Metastases: An Update
+                    &rarr; Moderators: Soumya N M (Kochi, India), Dr Uday Krishna (Chennai, India).
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Professor Rupesh Kotecha (Miami, FL, USA)
-                </div>
-                <div className="font-extrabold  underline mb-4">
-                    Management of Brain Metastases in India
-                </div>
-                <div className="mb-4">
-                    &rarr; Speaker: Professor Deepak Aggarwal (Delhi, India)
                 </div>
             </>
         ),
@@ -199,7 +190,7 @@ export const AGENDA_DAY_THREE = [
     },
     {
         title: 'Closing Lecture  ',
-        time: '04.15 pm - 04:35 pm',
+        time: '03.30 pm - 04:00 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
@@ -219,7 +210,7 @@ export const AGENDA_DAY_THREE = [
     },
     {
         title: 'Closing Remarks / Certification   ',
-        time: '04:35 pm - 04:50 pm',
+        time: '04:00 pm - 04:45 pm',
         name: ' ',
         description: () => (
             ''

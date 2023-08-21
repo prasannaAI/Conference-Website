@@ -353,7 +353,7 @@ function Faculty() {
         },
         {
             id: 69,
-            name: 'Manish Chomal',
+            name: 'Dr. Manish Chomal',
             image: '/assets/nationalFaculty/Manish Chomal1.jpeg',
             country: 'Jaipur, India',
         },

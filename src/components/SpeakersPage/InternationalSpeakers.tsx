@@ -27,25 +27,6 @@ function InternationalFaculties() {
             flag:'/assets/countryflags/egypt.png',
         },
         {
-            id: 2,
-            name: 'Professor EnMin Wang',
-            bio: (
-                <>
-                    Department of Neurosurgery,
-                    {' '}
-                    <br />
-                    {' '}
-                    CyberKnife Center, Huashan Hospital,
-                    <br />
-                    {' '}
-                    Fudan University,
-                </>
-            ),
-            image: '/assets/faculty/(12) EnMin Wang.jpg',
-            country: 'Shanghai, China',
-            flag:'/assets/countryflags/Flag-China.webp',
-        },
-        {
             id: 3,
             name: 'Professor Elitsa Encheva',
             bio: (
@@ -166,23 +147,6 @@ function InternationalFaculties() {
             flagSecond:'/assets/countryflags/Flag_of_Russia.png'
         },
         {
-            id: 10,
-            name: 'Professor Sean P. Collins',
-            bio: (
-                <>
-                    Director of the CyberKnife Prostate Program,
-                    {' '}
-                    <br />
-                    {' '}
-                    MedStar Georgetown University Hospital and School of Medicine,
-                </>
-            ),
-            image: '/assets/faculty/(2) Sean P. Collins.jpg',
-            country: 'Washington DC, USA',
-            flag:'/assets/countryflags/usa.png',
-
-        },
-        {
             id: 11,
             name: 'Dr. Rupesh Kotecha',
             bio: (
@@ -251,23 +215,6 @@ function InternationalFaculties() {
             image: '/assets/faculty/Ali Niyaf.jpg',
             country: 'Male, Maldives',
             flag:'/assets/countryflags/Flag-Maldives.webp',
-
-        },
-        {
-            id: 15,
-            name: 'Prof Qamruzzaman Chowdhury',
-            bio: (
-                <>
-                    Director,
-                    {' '}
-                    <br />
-                    {' '}
-                    Labaid Speciality Hospital,
-                </>
-            ),
-            image: '/assets/faculty/Qamruzzaman Chowdhury.jpg',
-            country: 'Dhaka, Bangladesh',
-            flag:'/assets/countryflags/Flag_of_Bangladesh.png',
 
         },
         {

@@ -30,23 +30,23 @@ export const AGENDA_DAY_ONE = [
                 <br />
                 <br />
                 {' '}
-                &rarr; Dr. Krish Sridhar, President, Neurological Society of India (Chennai, India)
+                &rarr; Professor Krish Sridhar; President, Neurological Society of India (Chennai, India)
                 {' '}
                 <br />
                 <br />
-                &rarr; Dr. Aditya Gupta, President, Indian Society of Stereotactic and Functional Neurosurgery (Gurugram, India)
+                &rarr; Professor Aditya Gupta; President, Indian Society of Stereotactic and Functional Neuro-surgery (Gurugram, India)
                 {' '}
                 <br />
                 <br />
-                &rarr; Dr. Venkatesan Srinivasan, Secretary, Association of Radiation Oncologists of India (Bathinda, India)
+                &rarr; Professor Venkatesan Srinivasan, Secretary, Association of Radiation Oncologists of India (Chennai, India)
                 {' '}
                 <br />
                 <br />
-                &rarr; Professor Bhaskar Viswanathan, Head of the Radiation Oncology Department, Amrita Institute of Medical Sciences (Delhi, India)
+                &rarr; Professor Bhaskar Viswanathan; Head of the Radiation Oncology Department, Amrita Institute of Medical Sciences (Delhi, India)
                 {' '}
                 <br />
-                <br />
-                &rarr; Professor Dr. Qamruzzaman Chowdhury, President, Bangladesh Society for Breast Cancer Study (Dhaka, Bangladesh)
+
+
             </>
         ),
         description: () => (
@@ -54,7 +54,7 @@ export const AGENDA_DAY_ONE = [
         )
     },
     {
-        title: 'Greetings  ',
+        title: 'Greetings ',
         time: '08.45 am - 09:00 am',
         name: (
             <>
@@ -101,7 +101,7 @@ export const AGENDA_DAY_ONE = [
                     SRS/SRT of Intracranial Meningiomas
                 </div>
                 <div className="mb-4">
-                    &rarr; Chairs: Dr. Venkatesan Srinivasan (Chennai, India); Prof Adesh Srivastava (Bhopal, India)
+                    &rarr; Chairs: Professor Venkatesan Srinivasan (Chennai, India); Professor Adesh Srivastava (Bhopal, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Moderators: Professor Ayyadurai Rethnathankom (Kochi, India); Dr. Mikhail Chernov (Tokyo, Japan)
@@ -131,7 +131,7 @@ export const AGENDA_DAY_ONE = [
                     &rarr; Speaker: Professor Yoshimasa Mori (Tokyo, Japan)
                 </div>
                 <div className="font-extrabold underline ">
-                    Overall Discussion
+                    Discussion
                 </div>
             </>
         ),
@@ -156,10 +156,10 @@ export const AGENDA_DAY_ONE = [
                     SRS/SRT of Sellar Tumors
                 </div>
                 <div className="mb-4">
-                    &rarr; Chairs: Dr. Ashok Bhanage (Pune, India); Dr. HV Easwer (Trivandrum, India)
+                    &rarr; Chairs: Dr. Ashok Bhanage (Pune, India); Professor  HV Easwer (Trivandrum, India)
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Professor Dwarakanath Srinivas (Bengaluru; India); Professor Amr El-Shehaby (Cairo, Egypt)
+                    &rarr; Moderators: Professor Kanwaljeet Garg (Delhi; India); Professor Amr El-Shehaby (Cairo, Egypt)
                 </div>
                 <div className="font-extrabold  underline mb-4">
                     SRS/SRT in Vicinity to Anterior Optic Pathways
@@ -168,10 +168,10 @@ export const AGENDA_DAY_ONE = [
                     &rarr; Speaker: Dr. Pavel Ivanov (St. Petersburg, Russia)
                 </div>
                 <div className="font-extrabold  underline mb-4">
-                    Role of SRS/SRT in Management of Nonfunctioning Pituitary Adenomas
+                    Role of SRS/SRT in Management of Non-functioning Pituitary Adenomas
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Dr. Tejpal Gupta (Mumbai, India)
+                    &rarr; Speaker: Professor Tejpal Gupta (Mumbai, India)
                 </div>
                 <div className="font-extrabold  underline mb-4">
                     Role of SRS/SRT in Management of Hormone-secreting Pituitary Adenomas
@@ -186,7 +186,7 @@ export const AGENDA_DAY_ONE = [
                     &rarr; Speaker: Professor Selcuk Peker (Istanbul, Turkey)
                 </div>
                 <div className="font-extrabold underline ">
-                    Overall Discussion
+                    Discussion
                 </div>
             </>
         ),
@@ -199,8 +199,11 @@ export const AGENDA_DAY_ONE = [
         time: '01.10 pm - 01:40 pm',
         name: (
             <>
+                <div className="font-extrabold  underline mb-4">
+                    Use of Vault-free, Cobalt-Free Gyroscopic Radiosurgery for Intracranial and Functional Pathologies
+                </div>
                 <div className="mb-4">
-                    &rarr; Moderator: Saloni Singh (Delhi, India), Prof Suman Bhaskar (Delhi, India)
+                    &rarr; Moderator: Dr. Maheep Singh Gaur (Meerut, India), Professor Suman Bhaskar (Delhi, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: David Miles (England, UK)
@@ -220,18 +223,16 @@ export const AGENDA_DAY_ONE = [
         )
     },
     {
-        title: 'Satellite Symposium of Accuray ',
+        title: 'Satellite Symposium of Robotic Radiosurgery ',
         time: '02.40 pm - 03:10 pm',
         name: (
             <>
-                <div className="font-extrabold  underline mb-4">
-                    CyberKnife Experience in India
-                </div>
-                <div className="mb-4">
-                    &rarr; Moderator: Dr. Bhooshan Zade (Pune, India); Dr VP Singh (Delhi, India)
-                </div>
+
                 <div className="font-extrabold  underline mb-4">
                     CyberKnife in Functional Neurosurgery
+                </div>
+                <div className="mb-4">
+                    &rarr; Moderator: Dr. Bhooshan Zade (Pune, India); Professor  VP Singh (Delhi, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Dr. Shankar Vangipuram (Chennai, India)
@@ -257,10 +258,10 @@ export const AGENDA_DAY_ONE = [
                     Radiosurgery of Cavernous Sinus Tumors
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Professor Milind Sankhe (Mumbai, India); Professor Selcuk Peker (Istanbul, Turkey)
+                    &rarr; Moderators: Dr Ramesh Sivaramakrishnan (Thrissur, India); Professor Selcuk Peker (Istanbul, Turkey)
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor EnMin Wang (Shanghai, China)
+                    &rarr; Speaker: Dr. Mikhail Chernov (Tokyo, Japan)
                 </div>
             </>
         ),
@@ -270,7 +271,7 @@ export const AGENDA_DAY_ONE = [
     },
     {
         title: 'Discussion on Real Clinical Cases ',
-        time: '03.40 pm - 04:50 pm',
+        time: '03.40 pm - 04:40 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
@@ -280,7 +281,29 @@ export const AGENDA_DAY_ONE = [
                     &rarr; Moderators: Dr Amitabh Roy (Kolkata, India); Professor Selcuk Peker (Istanbul, Turkey)
                 </div>
                 <div className="mb-4">
-                    &rarr; Speakers: Professor Xinyu Yang (Tianjin, China); Professor Amr El-Shehaby (Cairo, Egypt); Dr. Pavel Ivanov (St. Petersburg, Russia); Professor EnMin Wang (Shanghai, China); Professor Rajesh Balakrishnan (Vellore, India)
+                    &rarr; Speakers: Professor Xinyu Yang (Tianjin, China); Professor Amr El-Shehaby (Cairo, Egypt); Dr. Pavel Ivanov (St. Petersburg, Russia); Professor Rajesh Balakrishnan (Vellore, India)
+                </div>
+            </>
+        ),
+        description: () => (
+            ''
+        )
+    },
+
+    {
+        title: 'Satellite Symposium of C Rad',
+        time: '04.40 pm - 05:10 pm',
+        name: (
+            <>
+                <div className="font-extrabold  underline mb-4">
+                    Indian Insights: Harnessing SGRT for enhancing precision Radiotherapy and Radiosurgery
+                </div>
+                <div className="mb-4">
+                    &rarr; Moderators: Dr Arun lal (Kochi, India), Dr Saju Bhasi (Trivandam, India), Dr. Manish Chomal (Jaipur, India)
+
+                </div>
+                <div className="mb-4">
+                    &rarr; Speaker: Dr Saravana Kumar (Coimbatore, India)
                 </div>
             </>
         ),
@@ -290,7 +313,7 @@ export const AGENDA_DAY_ONE = [
     },
     {
         title: 'Closing Remarks for the First Day  ',
-        time: '04:50 pm - 05:00 pm',
+        time: '05:10 pm - 05:15 pm',
         name: ' ',
         description: () => (
             ''

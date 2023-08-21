@@ -49,7 +49,7 @@ export const AGENDA_DAY_TWO = [
                     &rarr; Speaker: Professor Ian McCutcheon (Houston, TX, USA)
                 </div>
                 <div className="font-extrabold underline ">
-                    Overall Discussion
+                    Discussion
                 </div>
             </>
         ),
@@ -94,7 +94,7 @@ export const AGENDA_DAY_TWO = [
                     Radiosurgery of Non-vestibular Schwannomas
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Sandip Vaishya (Gurugram, India); Dr. Tanweer Shahid (Kolkata, India)
+                    &rarr; Moderators: Dr. Vijayagopal K S (Calicut, India); Dr. Tanweer Shahid (Kolkata, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Professor Selcuk Peker (Istanbul, Turkey)
@@ -154,10 +154,19 @@ export const AGENDA_DAY_TWO = [
                     Gammaknife radiosurgery: An update
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderator: Professor Kanwaljeet Garg (Delhi, India), Prof Haresh KP (Delhi, India)
+                    &rarr; Moderator: Professor Manmohan Singh (Delhi, India), Professor Haresh KP (Delhi, India)
+                </div>
+                <div className="font-extrabold  underline mb-4">
+                    Current status of Radiosurgery in India and how to establish a GKRS centre.
                 </div>
                 <div className="mb-4">
-                    &rarr; Speaker: Professor Selcuk Peker (Istanbul, Turkey)
+                    &rarr; Speaker: Prof Manjul Tripathi (Chandigarh, India)
+                </div>
+                <div className="font-extrabold  underline mb-4">
+                    GammaKnife ICON – Experience with Advanced Innovative technologies.
+                </div>
+                <div className="mb-4">
+                    &rarr; Speaker: Dr Nishant Sadashiva (Bengaluru, India)
                 </div>
             </>
         ),
@@ -175,19 +184,36 @@ export const AGENDA_DAY_TWO = [
     },
 
     {
-        title: 'Satellite Symposium of Brainlab  ',
-        time: '02.30 pm - 03:00 pm',
+        title: 'Satellite Symposium of Amrita Institute of Medical Sciences ',
+        time: '02.30 pm - 04:00 pm',
         name: (
-            <>
+            <> 
+                {' '}
                 <div className="font-extrabold  underline mb-4">
-                    Radiosurgery of AVM: An Update
+                    Radiosurgery of Intracranial AVM and Brain Metastases
                 </div>
                 <div className="mb-4">
                     &rarr; Moderator: Dr Kaustav Talapatra (Mumbai, India), Dr Subhash Gupta (Delhi, India)
                 </div>
+                <div className="font-extrabold  underline mb-4">
+                    Radiosurgery of AVM: An Update
+                </div>
                 <div className="mb-4">
                     &rarr; Speaker: Professor Aditya Gupta (Delhi, India)
                 </div>
+                <div className="font-extrabold  underline mb-4">
+                    SRS of Brain Metastases: An Update
+                </div>
+                <div className="mb-4">
+                    &rarr; Speaker: Professor Rupesh Kotecha (Miami, FL, USA)
+                </div>
+                <div className="font-extrabold  underline mb-4">
+                    Management of Brain Metastases in India
+                </div>
+                <div className="mb-4">
+                    &rarr; Speaker: Professor V P Singh (Delhi, India)
+                </div>
+
             </>
         ),
         description: () => (
@@ -196,14 +222,14 @@ export const AGENDA_DAY_TWO = [
     },
     {
         title: 'Plenary Lecture VII   ',
-        time: '03.00 pm - 03:30 pm',
+        time: '04.00 pm - 04:30 pm',
         name:  (
             <>
                 <div className="font-extrabold  underline mb-4">
                     Current Role of Conventional FRT in Management of Intracranial Extracerebral Tumors
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Amit Jain (Meerut, India); Professor EnMin Wang (Shanghai, China)
+                    &rarr; Moderators: Dr. Amit Jain (Meerut, India); Dr Anand Balasubramanian (Delhi, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Professor Elitsa Encheva (Varna, Bulgaria)
@@ -216,34 +242,14 @@ export const AGENDA_DAY_TWO = [
     },
     {
         title: 'Plenary Lecture VIII  ',
-        time: '03.30 pm - 04:00 pm',
-        name: (
-            <>
-                <div className="font-extrabold  underline mb-4">
-                    Technologies for SRS and SRT: Comparison of Advantages and Limitations
-                </div>
-                <div className="mb-4">
-                    &rarr; Moderators: Dr. Maria Das (Lucknow, India); Professor EnMin Wang (Shanghai, China)
-                </div>
-                <div className="mb-4">
-                    &rarr; Speaker: Professor Rupesh Kotecha (Miami, FL, USA)
-                </div>
-            </>
-        ),
-        description: () => (
-            ''
-        )
-    },
-    {
-        title: 'Plenary Lecture IX  ',
-        time: '04:00 pm - 04:30 pm',
+        time: '04.30 pm - 05:00 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
                     Proton Therapy and Heavy Ion Therapy: Current Status and Future Perspectives of Clinical Applications
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Mikhail Chernov (Tokyo, Japan); Professor EnMin Wang (Shanghai, China)
+                    &rarr; Moderators: Dr. Mikhail Chernov (Tokyo, Japan); Professor CS Madhu (Kochi, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Professor Rakesh Jalali (Chennai, India)
@@ -256,14 +262,14 @@ export const AGENDA_DAY_TWO = [
     },
     {
         title: 'Plenary Lecture X  ',
-        time: '04:30 pm - 05:00 pm',
+        time: '05:00 pm - 05:30 pm',
         name: (
             <>
                 <div className="font-extrabold  underline mb-4">
                     Radiobiology of High Doses: Modeling of SBRT, SRT and SRS
                 </div>
                 <div className="mb-4">
-                    &rarr; Moderators: Dr. Vellaiyan Subramani (Delhi, India); Professor EnMin Wang (Shanghai, China)
+                    &rarr; Moderators: Dr. Maria Das (Lucknow, India); Dr Annex EH (Kochi, India)
                 </div>
                 <div className="mb-4">
                     &rarr; Speaker: Dr. Rajesh Kinhikar (Mumbai, India)
@@ -276,7 +282,7 @@ export const AGENDA_DAY_TWO = [
     },
     {
         title: 'Closing Remarks for the Second Day  ',
-        time: '05:00 pm - 05:05 pm',
+        time: '05:30 pm - 05:35 pm',
         name: ' ',
         description: () => (
             ''
